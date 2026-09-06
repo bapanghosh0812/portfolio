@@ -541,11 +541,16 @@
     const restart = $("#tour-restart"), header = $("#site-header");
 
     const steps = [
-      { emoji: "👋", title: "Welcome!", text: "First time here? A quick 25-second tour so you find everything fast. Skip anytime.", target: null, btn: "Show me 🚀" },
-      { emoji: "🧭", title: "Quick Navigation", text: "Jump to any section instantly — About, Skills, Projects, Certificates & Contact.", target: ".nav-desktop" },
-      { emoji: "🚀", title: "Real, Shipped Projects", text: "Rescuen is LIVE on the Play Store. Every project has a “View Details” with its architecture, features & metrics.", target: "#projects" },
-      { emoji: "🎓", title: "Verified Credentials", text: "Oracle, IBM, Microsoft, Kaggle & more — click the 👁 on any card to view the real certificate.", target: "#certificates" },
-      { emoji: "📬", title: "Let's Connect", text: "Looking for an intern or a driven developer? Message, call or WhatsApp me — I reply fast. Thanks for visiting! 🙌", target: "#contact", btn: "Start exploring 🔥" },
+      { emoji: "👋", title: "Welcome to my world!", text: "First time here? Awesome — I'm your tour guide 🤖. Give me 60 seconds and you'll know everything. Let's roll!", target: null, btn: "Let's Go! 🚀" },
+      { emoji: "🧭", title: "Your Magic Menu", text: "This is your teleporter ✨ — tap any link (About, Journey, Skills, Projects, Certificates, Contact) and jump straight there.", target: ".nav-desktop" },
+      { emoji: "🪐", title: "Meet Bapan Ghosh", text: "That's me! Those icons orbiting the photo are my tech stack. Fun fact: the whole background is a live 3D physics simulation — move your mouse and watch the particles react! 🧪", target: ".Me" },
+      { emoji: "🎯", title: "About Me", text: "Who I am in a nutshell — a Full-Stack & Cross-Platform Developer with a DevOps mindset, and creator of Rescuen (live on the Play Store).", target: "#about" },
+      { emoji: "🗺️", title: "My Journey", text: "The path so far — B.Tech IT, my AIML internship, industry certifications and shipped products. A quick story of the grind. 📈", target: "#journey" },
+      { emoji: "💪", title: "Skills & Tech Stack", text: "Everything I build with — grouped the way recruiters read it: App, Web, DevOps & Cloud, Databases and AI/ML. Hover the cards, they glow! ✨", target: "#skills" },
+      { emoji: "🚀", title: "Things I Actually Built", text: "Real, shipped projects! Tap “View Details” on any card to see its system architecture, features & metrics. Rescuen is LIVE on the Play Store 🎉", target: "#projects" },
+      { emoji: "🎓", title: "Certificates & Credentials", text: "Oracle, IBM, Microsoft, Google & Kaggle certifications. Click the 👁 on any card to open the actual certificate. Proof of the work! 🏅", target: "#certificates" },
+      { emoji: "📬", title: "Let's Connect", text: "Looking for a driven intern or a developer who ships? Message, call or WhatsApp me — I reply fast. 📞", target: "#contact" },
+      { emoji: "🎉", title: "Tour Complete!", text: "You've seen it all 🏆 Now go touch, click and explore everything. Thanks for visiting — hope to hear from you! 🙌", target: null, btn: "Start Exploring! 🔥" },
     ];
 
     let idx = 0, hl = null;
