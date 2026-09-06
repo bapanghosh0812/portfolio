@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO / Social ===== -->
+    <title>Bapan Ghosh | Full-Stack & Cross-Platform Developer · DevOps</title>
+    <meta name="description" content="Bapan Ghosh — B.Tech IT student & Full-Stack + Cross-Platform Developer (React, React Native, Flutter) with DevOps skills (Docker, Kubernetes, Redis). Creator of Rescuen, a live personal-safety app on the Play Store. Open to internships & opportunities.">
+    <meta name="author" content="Bapan Ghosh">
+    <meta name="keywords" content="Bapan Ghosh, Full-Stack Developer, React Native, Flutter, DevOps, Docker, Kubernetes, Portfolio, B.Tech, Rescuen, Internship">
+    <meta name="theme-color" content="#e10600">
+    <link rel="canonical" href="https://bapanghosh.netlify.app/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bapan Ghosh | Full-Stack & Cross-Platform Developer">
+    <meta property="og:description" content="Building production-ready web & mobile apps — full-stack, cross-platform & DevOps. Creator of Rescuen (live on Play Store). Open to internships.">
+    <meta property="og:url" content="https://bapanghosh.netlify.app/">
+    <meta property="og:image" content="https://bapanghosh.netlify.app/images/bapan1.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bapan Ghosh | Full-Stack & Cross-Platform Developer">
+    <meta name="twitter:description" content="Full-stack, cross-platform & DevOps developer. Creator of Rescuen (live on Play Store).">
+    <meta name="twitter:image" content="https://bapanghosh.netlify.app/images/bapan1.jpeg">
+
+    <!-- ===== Fonts ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- ===== Icons + Styles ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="images/bapan1.jpeg">
+
+    <!-- ===== 3D background + interactions ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="main.js" defer></script>
+
+    <!-- ===== Structured data ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Bapan Ghosh",
+      "jobTitle": "Full-Stack & Cross-Platform Developer",
+      "url": "https://bapanghosh.netlify.app/",
+      "email": "mailto:bapanghosh081204@gmail.com",
+      "image": "https://bapanghosh.netlify.app/images/bapan1.jpeg",
+      "address": { "@type": "PostalAddress", "addressLocality": "Bankura", "addressRegion": "West Bengal", "addressCountry": "IN" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Bengal College of Engineering and Technology (BCET), Durgapur" },
+      "knowsAbout": ["Full-Stack Development", "React", "React Native", "Flutter", "DevOps", "Docker", "Kubernetes", "PostgreSQL", "Machine Learning"],
+      "sameAs": [
+        "https://github.com/bapanghosh0812",
+        "https://www.linkedin.com/in/bapan-ghosh-5676803a2",
+        "https://leetcode.com/u/BAPAN_GHOSH_07/"
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ===== Background layers ===== -->
+    <div class="bg-fallback"></div>
+    <canvas id="bg-canvas"></canvas>
+    <div class="bg-vignette"></div>
+
+    <div id="scroll-progress"></div>
+
+    <!-- ===== Header ===== -->
+    <header id="site-header">
+        <div class="nav-inner">
+            <a href="#home" class="brand" aria-label="Bapan Ghosh - Home">
+                <span class="video-logo-container">
+                    <video autoplay muted loop playsinline class="brand-video-logo">
+                        <source src="videos/video1.mp4" type="video/mp4">
+                    </video>
+                </span>
+                <span class="brand-name">
+                    <b>Bapan Ghosh</b>
+                    <small>&lt;full-stack.dev /&gt;</small>
+                </span>
+            </a>
+
+            <nav class="nav-desktop" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#journey">Journey</a></li>
+                    <li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right">
+                <div class="social-mini">
+                    <a href="https://github.com/bapanghosh0812" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/bapan-ghosh-5676803a2" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/u/BAPAN_GHOSH_07/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+                </div>
+                <a href="#contact" class="nav-cta">Hire Me</a>
+                <button id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== Mobile drawer ===== -->
+    <nav id="mobile-nav" aria-label="Mobile">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+        <a href="resume1.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-download"></i>&nbsp; Download CV</a>
+        <div class="m-social">
+            <a href="https://github.com/bapanghosh0812" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/bapan-ghosh-5676803a2" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wa.me/919883290273" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:bapanghosh081204@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-grid">
+            <div class="hero-text">
+                <div class="availability"><span class="dot"></span> Open to Internships &amp; Opportunities · 2027 Batch</div>
+                <h1>Hi, I'm <span class="accent">Bapan Ghosh</span></h1>
+                <p class="role-line"><span class="prefix">&gt; I build as a </span><span id="typed-role" data-roles='["Full-Stack Developer","Cross-Platform Developer","DevOps Enthusiast","React Native &amp; Flutter Dev","AI-UX Engineer"]'></span></p>
+                <p class="lead">
+                    A <strong>B.Tech IT student</strong> who ships <span class="hl">real, production-ready</span> web &amp; mobile products —
+                    not just demos. I connect polished full-stack architectures <span class="hl">(MERN, React Native, Flutter)</span>
+                    with intelligent AI, and scale them using <span class="hl">Docker, Redis &amp; WebSockets</span>.
+                    Proud creator of <strong>Rescuen</strong>, a personal-safety app <span class="hl">live on the Play Store</span>.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Explore My Work</a>
+                    <a href="resume1.pdf" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-solid fa-download"></i> Download CV</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/bapanghosh0812" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/bapan-ghosh-5676803a2" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/919883290273" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://leetcode.com/u/BAPAN_GHOSH_07/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+                    <a href="mailto:bapanghosh081204@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="Me">
+                    <div class="orbit">
+                        <span class="icon html"><i class="fa-brands fa-html5"></i></span>
+                        <span class="icon python"><i class="fa-brands fa-python"></i></span>
+                        <span class="icon flutter"><i class="fa-solid fa-mobile-screen"></i></span>
+                        <span class="icon C"><i class="fa-solid fa-c"></i></span>
+                        <span class="icon react"><i class="fa-brands fa-react"></i></span>
+                        <span class="icon js"><i class="fa-brands fa-js"></i></span>
+                        <span class="icon css"><i class="fa-brands fa-css3"></i></span>
+                    </div>
+                    <div class="orbit orbit-2"></div>
+                    <img src="images/bapan2.jpeg" alt="Bapan Ghosh">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <div class="stats">
+        <div class="stats-grid" data-reveal>
+            <div class="stat"><div class="num" data-count="9" data-suffix="+">0</div><div class="label">Projects Built</div></div>
+            <div class="stat"><div class="num" data-count="1" data-suffix="">0</div><div class="label">Live on Play Store</div></div>
+            <div class="stat"><div class="num" data-count="16" data-suffix="+">0</div><div class="label">Certificates &amp; Badges</div></div>
+            <div class="stat"><div class="num" data-count="25" data-suffix="+">0</div><div class="label">Technologies</div></div>
+        </div>
+    </div>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+        <div class="section-head" data-reveal>
+            <span class="eyebrow">// who i am</span>
+            <h2 class="section-title">About <span>Me</span></h2>
+        </div>
+        <div class="about-content">
+            <div class="about-img" data-reveal>
+                <img src="images/bapan1.jpeg" alt="Bapan Ghosh">
+                <div class="frame"></div>
+            </div>
+            <div class="about-main" data-reveal data-delay="1">
+                <h3 class="about-heading">Full-Stack &amp; Cross-Platform Developer <span>|</span> DevOps Enthusiast</h3>
+                <p class="about-lead">
+                    I turn ideas into products people actually use. From <span class="hl">cross-platform mobile apps</span>
+                    to <strong>scalable full-stack web platforms</strong>, I care about clean architecture, real-time features
+                    and production readiness. My proudest build, <strong>Rescuen</strong>, is a personal-safety app that's
+                    <span class="hl">live on the Google Play Store</span> — and I'm always hungry to build the next big thing.
+                </p>
+                <ul class="about-points">
+                    <li><i class="fa-solid fa-circle-check"></i> Cross-platform apps with Flutter, React Native &amp; Capacitor</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Full-stack web with React, Node.js, Express &amp; PostgreSQL</li>
+                    <li><i class="fa-solid fa-circle-check"></i> DevOps mindset — Docker, Kubernetes, Redis &amp; caching</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Real-time systems with WebSockets &amp; REST APIs</li>
+                    <li><i class="fa-solid fa-circle-check"></i> AI integration — Gemini API, NLP &amp; computer vision</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Strong on DSA, OOP &amp; system-design thinking</li>
+                </ul>
+                <div class="about-quick">
+                    <div class="quick-item"><i class="fa-solid fa-graduation-cap"></i><span><b>B.Tech IT</b> BCET · Batch 2027</span></div>
+                    <div class="quick-item"><i class="fa-solid fa-briefcase"></i><span><b>AIML Intern</b> EDU TANTR</span></div>
+                    <div class="quick-item"><i class="fa-solid fa-location-dot"></i><span><b>Bankura</b> West Bengal, India</span></div>
+                    <div class="quick-item"><i class="fa-solid fa-language"></i><span><b>Languages</b> English · Hindi · Bengali</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== JOURNEY / TIMELINE (concise) ===== -->
+    <section class="section" id="journey">
+        <div class="section-head" data-reveal>
+            <span class="eyebrow">// the path so far</span>
+            <h2 class="section-title">My <span>Journey</span></h2>
+        </div>
+        <div class="timeline">
+            <div class="tl-item" data-reveal>
+                <div class="tl-date">2023 — 2027</div>
+                <div class="tl-card"><h4>B.Tech in <span>Information Technology</span></h4><p>Bengal College of Engineering and Technology (BCET), Durgapur · Graduation Batch 2027.</p></div>
+            </div>
+            <div class="tl-item" data-reveal>
+                <div class="tl-date">AUG 2025 — NOV 2025</div>
+                <div class="tl-card"><h4>AIML Intern · <span>EDU TANTR</span></h4><p>Completed an intensive AI/ML internship — hands-on model building and real engineering workflows.</p></div>
+            </div>
+            <div class="tl-item" data-reveal>
+                <div class="tl-date">2025</div>
+                <div class="tl-card"><h4>Certified · <span>Oracle · IBM · Microsoft · Kaggle</span></h4><p>Oracle Generative AI Professional, IBM AI Fundamentals, Microsoft Azure Fundamentals and Kaggle Python &amp; Dataset badges.</p></div>
+            </div>
+            <div class="tl-item" data-reveal>
+                <div class="tl-date">2026</div>
+                <div class="tl-card"><h4>🚀 Launched <span>Rescuen</span> on the Play Store</h4><p>Shipped a personal-safety mobile app with SOS alerts, live location sharing and optimized background tracking.</p></div>
+            </div>
+            <div class="tl-item" data-reveal>
+                <div class="tl-date">2027 — EXPECTED</div>
+                <div class="tl-card"><h4>B.Tech <span>Graduation</span></h4><p>Graduating as a full-stack &amp; cross-platform developer, ready for high-impact engineering roles.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+        <div class="section-head" data-reveal>
+            <span class="eyebrow">// what i work with</span>
+            <h2 class="section-title">Skills &amp; <span>Tech Stack</span></h2>
+            <p class="section-sub">Grouped the way engineering teams actually think — from app &amp; web to DevOps, data and AI.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-box" data-reveal>
+                <h3><i class="fa-solid fa-mobile-screen-button cat-icon"></i> App Development</h3>
+                <p class="skill-desc">Native &amp; cross-platform mobile apps.</p>
+                <div class="skill-tags">
+                    <span><i class="devicon-flutter-plain colored"></i> Flutter</span>
+                    <span><i class="devicon-dart-plain colored"></i> Dart</span>
+                    <span><i class="devicon-react-original colored"></i> React Native</span>
+                    <span><i class="fa-solid fa-bolt"></i> Capacitor</span>
+                    <span><i class="devicon-kotlin-plain colored"></i> Kotlin</span>
+                    <span><i class="devicon-java-plain colored"></i> Java</span>
+                    <span><i class="devicon-androidstudio-plain colored"></i> Android Studio</span>
+                    <span><i class="devicon-firebase-plain colored"></i> Firebase</span>
+                </div>
+            </div>
+
+            <div class="skill-box" data-reveal data-delay="1">
+                <h3><i class="fa-solid fa-globe cat-icon"></i> Web Development</h3>
+                <p class="skill-desc">Modern, responsive full-stack web.</p>
+                <div class="skill-tags">
+                    <span><i class="devicon-react-original colored"></i> React 19</span>
+                    <span><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+                    <span><i class="devicon-javascript-plain colored"></i> JavaScript (ES6+)</span>
+                    <span><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                    <span><i class="devicon-express-original"></i> Express</span>
+                    <span><i class="devicon-tailwindcss-original colored"></i> Tailwind CSS</span>
+                    <span><i class="devicon-html5-plain colored"></i> HTML5</span>
+                    <span><i class="devicon-css3-plain colored"></i> CSS3</span>
+                </div>
+            </div>
+
+            <div class="skill-box" data-reveal data-delay="2">
+                <h3><i class="fa-solid fa-server cat-icon"></i> DevOps &amp; Cloud <span class="badge-new">NEW</span></h3>
+                <p class="skill-desc">Containerize, cache, ship &amp; scale.</p>
+                <div class="skill-tags">
+                    <span><i class="devicon-docker-plain colored"></i> Docker</span>
+                    <span><i class="devicon-kubernetes-plain colored"></i> Kubernetes (K8s)</span>
+                    <span><i class="fa-brands fa-aws"></i> AWS SDK</span>
+                    <span><i class="devicon-redis-plain colored"></i> Redis Caching</span>
+                    <span><i class="devicon-git-plain colored"></i> Git</span>
+                    <span><i class="devicon-github-original"></i> GitHub</span>
+                    <span><i class="fa-solid fa-code-branch"></i> GitHub Actions (CI/CD)</span>
+                </div>
+            </div>
+
+            <div class="skill-box" data-reveal data-delay="3">
+                <h3><i class="fa-solid fa-database cat-icon"></i> Databases &amp; Architecture</h3>
+                <p class="skill-desc">Data modeling &amp; real-time systems.</p>
+                <div class="skill-tags">
+                    <span><i class="devicon-postgresql-plain colored"></i> PostgreSQL (pg_trgm)</span>
+                    <span><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                    <span><i class="devicon-firebase-plain colored"></i> Firebase</span>
+                    <span><i class="devicon-mysql-plain colored"></i> SQL / MySQL</span>
+                    <span><i class="fa-solid fa-plug"></i> WebSockets</span>
+                    <span><i class="fa-solid fa-diagram-project"></i> REST APIs</span>
+                    <span><i class="fa-solid fa-sitemap"></i> System Design</span>
+                </div>
+            </div>
+
+            <div class="skill-box" data-reveal data-delay="4">
+                <h3><i class="fa-solid fa-brain cat-icon"></i> AI / ML</h3>
+                <p class="skill-desc">Generative AI &amp; computer vision.</p>
+                <div class="skill-tags">
+                    <span><i class="fa-solid fa-wand-magic-sparkles"></i> Google Gemini API</span>
+                    <span><i class="fa-solid fa-comment-dots"></i> LLM Prompt Engineering</span>
+                    <span><i class="devicon-opencv-plain colored"></i> OpenCV</span>
+                    <span><i class="fa-solid fa-language"></i> NLP</span>
+                    <span><i class="devicon-python-plain colored"></i> Python</span>
+                    <span><i class="fa-solid fa-robot"></i> Machine Learning</span>
+                </div>
+            </div>
+
+            <div class="skill-box" data-reveal>
+                <h3><i class="fa-solid fa-user-gear cat-icon"></i> Core &amp; Soft Skills</h3>
+                <p class="skill-desc">How I work with people &amp; problems.</p>
+                <div class="skill-tags">
+                    <span><i class="fa-solid fa-code"></i> C / C++</span>
+                    <span><i class="fa-solid fa-diagram-project"></i> DSA &amp; OOP</span>
+                    <span><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
+                    <span><i class="fa-solid fa-people-group"></i> Team Collaboration</span>
+                    <span><i class="fa-solid fa-bolt"></i> Quick Learning</span>
+                    <span><i class="fa-solid fa-comments"></i> Communication</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+        <div class="section-head" data-reveal>
+            <span class="eyebrow">// things i've built</span>
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <p class="section-sub">Real, shipped work. Hit <b>“View Details”</b> on any card for the architecture, features and how I built it.</p>
+        </div>
+
+        <div class="filter-bar" data-reveal>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">Apps</button>
+            <button class="filter-btn" data-filter="ai">AI / ML</button>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- 1. College Campus -->
+            <div class="project-card" data-cat="web app" data-reveal>
+                <div class="project-image">
+                    <span class="project-flag">⭐ FLAGSHIP</span>
+                    <img src="images/projects/college-campus.png" alt="College Campus — cross-platform social app">
+                </div>
+                <div class="project-content">
+                    <h3>College Campus</h3>
+                    <p class="desc">Enterprise-grade cross-platform social app for college campuses — fuzzy search, real-time notifications, notice boards &amp; automated student verification.</p>
+                    <div class="metric-row">
+                        <span class="metric"><b>90%↓</b> manual verification</span>
+                        <span class="metric"><b>&lt;100ms</b> fuzzy search</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>React 19</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>PostgreSQL (pg_trgm)</span><span>Redis</span><span>Capacitor</span><span>Tailwind CSS</span><span>Framer Motion</span><span>Zustand</span><span>AWS SDK</span><span>Docker &amp; K8s</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://the-college-campus.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/bapanghosh0812/Social-App" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                        <button class="btn-details"><i class="fa-solid fa-layer-group"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-full" hidden>
+                    <h3>College Campus</h3>
+                    <p class="sub">Cross-platform Social Platform · React 19 · Node · PostgreSQL · Docker/K8s</p>
+                    <p>An enterprise-grade social platform for college campuses, engineered for scale and real-time interaction across web and mobile from a single codebase.</p>
+                    <h4>How I built it</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-bolt"></i> <span><b>Sub-100ms fuzzy search</b> using PostgreSQL <b>pg_trgm</b> trigram indexing.</span></li>
+                        <li><i class="fa-solid fa-tower-broadcast"></i> <span><b>Real-time notifications</b> over WebSockets for instant campus updates.</span></li>
+                        <li><i class="fa-solid fa-id-card"></i> <span><b>Automated student-ID verification</b> — cutting manual admin overhead by ~90%.</span></li>
+                        <li><i class="fa-solid fa-gauge-high"></i> <span><b>Redis caching</b> keeps hot queries fast under load; <b>Zustand</b> drives client state.</span></li>
+                        <li><i class="fa-solid fa-box"></i> <span><b>Dockerized</b> services, <b>Kubernetes</b>-ready, with <b>AWS S3</b> for media.</span></li>
+                    </ul>
+                    <h4>System Architecture</h4>
+                    <div class="arch"><div class="flow">
+                        <div class="flow-branch">
+                            <div class="flow-node sm"><i class="fa-brands fa-react"></i><b>Web</b><small>React 19</small></div>
+                            <div class="flow-node sm"><i class="fa-solid fa-mobile-screen"></i><b>Mobile</b><small>Capacitor</small></div>
+                        </div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-brands fa-node-js"></i><b>API</b><small>Node · Express<br>REST + WS</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-branch">
+                            <div class="flow-node sm"><i class="fa-solid fa-database"></i><b>PostgreSQL</b><small>pg_trgm</small></div>
+                            <div class="flow-node sm"><i class="fa-solid fa-bolt"></i><b>Redis</b><small>cache</small></div>
+                            <div class="flow-node sm"><i class="fa-solid fa-cloud"></i><b>AWS S3</b><small>media</small></div>
+                            <div class="flow-node sm"><i class="fa-solid fa-tower-broadcast"></i><b>WS Hub</b><small>realtime</small></div>
+                        </div>
+                    </div><p class="arch-note">🐳 Dockerized &amp; ☸ Kubernetes-ready deployment</p></div>
+                    <h4>Tech Stack</h4>
+                    <div class="modal-tech"><span>React 19</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>PostgreSQL (pg_trgm)</span><span>Redis</span><span>Capacitor</span><span>Tailwind CSS</span><span>Framer Motion</span><span>Zustand</span><span>AWS SDK</span><span>Docker &amp; K8s</span></div>
+                    <div class="modal-links">
+                        <a href="https://the-college-campus.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <a href="https://github.com/bapanghosh0812/Social-App" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Rescuen -->
+            <div class="project-card" data-cat="app" data-reveal data-delay="1">
+                <div class="project-image logo-fit">
+                    <span class="project-flag">📱 MOBILE APP</span>
+                    <img src="images/projects/rescuen-logo.png" alt="Rescuen — personal safety app">
+                </div>
+                <div class="project-content">
+                    <h3>Rescuen <span class="live-badge store"><i class="fa-brands fa-google-play"></i> Live on Play Store</span></h3>
+                    <p class="desc">A personal safety &amp; rescue app for emergencies — SOS alerts, live location sharing and one-tap access to help.</p>
+                    <div class="metric-row">
+                        <span class="metric"><b>~30%↓</b> battery use</span>
+                        <span class="metric"><b>1-tap</b> SOS alerts</span>
+                    </div>
+                    <div class="project-tech"><span>Flutter</span><span>Dart</span><span>Kotlin</span><span>Firebase</span></div>
+                    <div class="project-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.officialrescuen.app" class="btn-demo" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i> Play Store</a>
+                        <a href="https://github.com/bapanghosh0812" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                        <button class="btn-details"><i class="fa-solid fa-layer-group"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-full" hidden>
+                    <h3>Rescuen</h3>
+                    <p class="sub">Personal Safety App · Flutter · Kotlin · Firebase · Live on Google Play</p>
+                    <p>A comprehensive personal-safety mobile app built to protect users during emergencies, with a fast interface designed for high-stress moments.</p>
+                    <h4>How I built it</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-triangle-exclamation"></i> <span><b>One-tap SOS alerts</b> that instantly notify emergency contacts via Firebase Cloud Messaging.</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <span><b>Live location sharing</b> so trusted contacts can track you in real time.</span></li>
+                        <li><i class="fa-solid fa-battery-half"></i> <span><b>Background location optimization</b> cutting battery consumption by ~30%.</span></li>
+                        <li><i class="fa-solid fa-fire"></i> <span>Native modules in <b>Kotlin</b>; <b>Firebase</b> for auth, realtime data &amp; notifications.</span></li>
+                        <li><i class="fa-brands fa-google-play"></i> <span><b>Published &amp; live</b> on the Google Play Store.</span></li>
+                    </ul>
+                    <h4>System Architecture</h4>
+                    <div class="arch"><div class="flow">
+                        <div class="flow-node"><i class="fa-solid fa-mobile-screen"></i><b>Flutter App</b><small>+ Kotlin native</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-location-crosshairs"></i><b>Location Service</b><small>battery-optimized</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-branch">
+                            <div class="flow-node sm"><i class="fa-solid fa-fire"></i><b>Firebase</b><small>Auth · DB</small></div>
+                            <div class="flow-node sm"><i class="fa-solid fa-bell"></i><b>FCM</b><small>SOS push</small></div>
+                            <div class="flow-node sm"><i class="fa-solid fa-user-group"></i><b>Contacts</b><small>live track</small></div>
+                        </div>
+                    </div></div>
+                    <h4>Tech Stack</h4>
+                    <div class="modal-tech"><span>Flutter</span><span>Dart</span><span>Kotlin</span><span>Firebase</span><span>Cloud Messaging</span><span>Google Maps</span></div>
+                    <div class="modal-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.officialrescuen.app" class="btn-demo" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i> Play Store</a>
+                        <a href="https://github.com/bapanghosh0812" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Rescuen Web -->
+            <div class="project-card" data-cat="web" data-reveal data-delay="2">
+                <div class="project-image"><img src="images/projects/rescuen-web.jpeg" alt="Rescuen Web dashboard"></div>
+                <div class="project-content">
+                    <h3>Rescuen Web</h3>
+                    <p class="desc">Official web platform for Rescuen — dashboard, SOS alert tracking, profile setup and an AI-powered help center.</p>
+                    <div class="project-tech"><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Express</span></div>
+                    <div class="project-actions">
+                        <a href="https://rescuen-web.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/bapanghosh0812" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                        <button class="btn-details"><i class="fa-solid fa-layer-group"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-full" hidden>
+                    <h3>Rescuen Web</h3>
+                    <p class="sub">Web Companion · React · TypeScript · Tailwind · Express</p>
+                    <p>The web companion to the Rescuen app — a responsive dashboard that brings safety tools to the browser.</p>
+                    <h4>How I built it</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-gauge"></i> <span>Central <b>dashboard</b> with SOS alert tracking &amp; history.</span></li>
+                        <li><i class="fa-solid fa-user-gear"></i> <span>Profile &amp; emergency-contact setup flows.</span></li>
+                        <li><i class="fa-solid fa-robot"></i> <span><b>AI-powered help center</b> for instant safety guidance.</span></li>
+                    </ul>
+                    <h4>System Architecture</h4>
+                    <div class="arch"><div class="flow">
+                        <div class="flow-node"><i class="fa-brands fa-react"></i><b>Browser</b><small>React · TS</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-brands fa-node-js"></i><b>API</b><small>Express · Node</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-branch">
+                            <div class="flow-node sm"><i class="fa-solid fa-fire"></i><b>Firebase</b><small>data</small></div>
+                            <div class="flow-node sm"><i class="fa-solid fa-robot"></i><b>AI Help</b><small>LLM</small></div>
+                        </div>
+                    </div></div>
+                    <h4>Tech Stack</h4>
+                    <div class="modal-tech"><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Express</span><span>Node.js</span><span>Firebase</span></div>
+                    <div class="modal-links">
+                        <a href="https://rescuen-web.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <a href="https://github.com/bapanghosh0812" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. ColorCraft -->
+            <div class="project-card" data-cat="web ai" data-reveal data-delay="3">
+                <div class="project-image"><img src="images/projects/Color-Craft.png" alt="ColorCraft — AI coloring book generator"></div>
+                <div class="project-content">
+                    <h3>ColorCraft</h3>
+                    <p class="desc">A GenAI children's coloring-book generator — personalized 5-page stories, thick-line artwork &amp; downloadable PDFs.</p>
+                    <div class="metric-row"><span class="metric"><b>Gemini AI</b> · rate-limited</span></div>
+                    <div class="project-tech"><span>React.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>HTML5 Canvas</span><span>Google Gemini AI</span><span>Generative AI / LLM</span><span>Prompt Engineering</span><span>jsPDF</span><span>Vite</span><span>JavaScript (ES6+)</span></div>
+                    <div class="project-actions">
+                        <a href="https://children-s-coloring-book-generator.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/bapanghosh0812/Children-s-Coloring-Book-Generator" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                        <button class="btn-details"><i class="fa-solid fa-layer-group"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-full" hidden>
+                    <h3>ColorCraft</h3>
+                    <p class="sub">Generative-AI Web App · React · Gemini · Canvas API</p>
+                    <p>A Children's Coloring Book Generator that turns a simple prompt into a personalized 5-page illustrated story, ready to print.</p>
+                    <h4>How I built it</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-wand-magic-sparkles"></i> <span><b>Personalized 5-page story generation</b> powered by Google Gemini.</span></li>
+                        <li><i class="fa-solid fa-pen-nib"></i> <span>Thick-line, kid-friendly artwork rendered with the <b>HTML5 Canvas API</b>.</span></li>
+                        <li><i class="fa-solid fa-file-pdf"></i> <span>One-click <b>downloadable PDF export</b> via jsPDF.</span></li>
+                        <li><i class="fa-solid fa-shield-halved"></i> <span><b>Client-side rate limiting</b> on the Gemini API to control production API costs.</span></li>
+                    </ul>
+                    <h4>System Architecture</h4>
+                    <div class="arch"><div class="flow">
+                        <div class="flow-node"><i class="fa-brands fa-react"></i><b>React UI</b><small>Vite · TS</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-shield-halved"></i><b>Rate Limiter</b><small>cost guard</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-wand-magic-sparkles"></i><b>Gemini API</b><small>story + art</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-branch">
+                            <div class="flow-node sm"><i class="fa-solid fa-palette"></i><b>Canvas</b><small>render</small></div>
+                            <div class="flow-node sm"><i class="fa-solid fa-file-pdf"></i><b>jsPDF</b><small>export</small></div>
+                        </div>
+                    </div></div>
+                    <h4>Tech Stack</h4>
+                    <div class="modal-tech"><span>React.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>HTML5 Canvas</span><span>Google Gemini AI</span><span>Prompt Engineering</span><span>jsPDF</span><span>Vite</span><span>Neo-Brutalist UI</span></div>
+                    <div class="modal-links">
+                        <a href="https://children-s-coloring-book-generator.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <a href="https://github.com/bapanghosh0812/Children-s-Coloring-Book-Generator" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. CutSlot -->
+            <div class="project-card" data-cat="app" data-reveal>
+                <div class="project-image"><img src="https://placehold.co/600x400/0e0e12/e10600?text=CutSlot+%7C+Salon+Booking" alt="CutSlot — salon booking app"></div>
+                <div class="project-content">
+                    <h3>CutSlot</h3>
+                    <p class="desc">A salon partner &amp; slot-booking app — discover salons, book appointments, with a dedicated partner app for owners.</p>
+                    <div class="project-tech"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+                    <div class="project-actions">
+                        <a href="https://cutslot.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/bapanghosh0812/cutslot" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                        <button class="btn-details"><i class="fa-solid fa-layer-group"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-full" hidden>
+                    <h3>CutSlot</h3>
+                    <p class="sub">Salon Booking App · Flutter · Dart · Firebase</p>
+                    <p>A two-sided salon booking platform: a customer app to discover salons and book slots, plus a partner app for salon owners to manage availability.</p>
+                    <h4>How I built it</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-magnifying-glass"></i> <span><b>Discover salons</b> and browse services near you.</span></li>
+                        <li><i class="fa-solid fa-calendar-check"></i> <span><b>Real-time slot booking</b> synced through Firebase.</span></li>
+                        <li><i class="fa-solid fa-store"></i> <span>Dedicated <b>partner app</b> for owners to manage slots &amp; bookings.</span></li>
+                    </ul>
+                    <h4>System Architecture</h4>
+                    <div class="arch"><div class="flow">
+                        <div class="flow-branch">
+                            <div class="flow-node sm"><i class="fa-solid fa-user"></i><b>Customer App</b><small>Flutter</small></div>
+                            <div class="flow-node sm"><i class="fa-solid fa-store"></i><b>Partner App</b><small>Flutter</small></div>
+                        </div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-fire"></i><b>Firebase</b><small>Auth · Firestore</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-calendar-check"></i><b>Bookings</b><small>realtime slots</small></div>
+                    </div></div>
+                    <h4>Tech Stack</h4>
+                    <div class="modal-tech"><span>Flutter</span><span>Dart</span><span>Firebase</span><span>Firestore</span></div>
+                    <div class="modal-links">
+                        <a href="https://cutslot.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <a href="https://github.com/bapanghosh0812/cutslot" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. GhoshKart -->
+            <div class="project-card" data-cat="web" data-reveal data-delay="1">
+                <div class="project-image"><img src="images/projects/E-commerce.png" alt="GhoshKart — online shopping app"></div>
+                <div class="project-content">
+                    <h3>GhoshKart</h3>
+                    <p class="desc">A functional e-commerce platform with order management, product catalog, cart &amp; UPI checkout.</p>
+                    <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="project-actions">
+                        <a href="https://e-commerce-site-by-bapanghosh.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/bapanghosh0812/E-commerce-Site" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                        <button class="btn-details"><i class="fa-solid fa-layer-group"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-full" hidden>
+                    <h3>GhoshKart</h3>
+                    <p class="sub">E-commerce Platform · HTML · CSS · JavaScript</p>
+                    <p>A fully functional storefront with a custom order-management flow and a smooth, responsive shopping experience.</p>
+                    <h4>How I built it</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-boxes-stacked"></i> <span><b>Product catalog</b> with categories &amp; a clean browsing UI.</span></li>
+                        <li><i class="fa-solid fa-cart-shopping"></i> <span><b>Cart management</b> persisted in the browser.</span></li>
+                        <li><i class="fa-solid fa-indian-rupee-sign"></i> <span><b>UPI checkout</b> flow &amp; custom order management.</span></li>
+                    </ul>
+                    <h4>System Architecture</h4>
+                    <div class="arch"><div class="flow">
+                        <div class="flow-node"><i class="fa-brands fa-html5"></i><b>Storefront</b><small>HTML · CSS · JS</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-cart-shopping"></i><b>Cart</b><small>localStorage</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-receipt"></i><b>Orders</b><small>management</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-indian-rupee-sign"></i><b>UPI</b><small>checkout</small></div>
+                    </div></div>
+                    <h4>Tech Stack</h4>
+                    <div class="modal-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="modal-links">
+                        <a href="https://e-commerce-site-by-bapanghosh.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <a href="https://github.com/bapanghosh0812/E-commerce-Site" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Online Examination System -->
+            <div class="project-card" data-cat="web" data-reveal data-delay="2">
+                <div class="project-image"><img src="images/projects/online examination page.png" alt="Online Examination System"></div>
+                <div class="project-content">
+                    <h3>Online Examination System</h3>
+                    <p class="desc">A secure platform for online assessments — automated grading, time limits and dashboards for students &amp; admins.</p>
+                    <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="project-actions">
+                        <a href="https://onlineexaminationsystems7.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/bapanghosh0812/Online-exam-system" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                        <button class="btn-details"><i class="fa-solid fa-layer-group"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-full" hidden>
+                    <h3>Online Examination System</h3>
+                    <p class="sub">Assessment Platform · HTML · CSS · JavaScript</p>
+                    <p>A secure and scalable platform for conducting online quizzes and exams, with everything both students and administrators need.</p>
+                    <h4>How I built it</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-stopwatch"></i> <span><b>Timed exams</b> with automatic submission on timeout.</span></li>
+                        <li><i class="fa-solid fa-check-double"></i> <span><b>Automated grading</b> for instant results.</span></li>
+                        <li><i class="fa-solid fa-gauge"></i> <span>Separate <b>dashboards</b> for students and administrators.</span></li>
+                    </ul>
+                    <h4>System Architecture</h4>
+                    <div class="arch"><div class="flow">
+                        <div class="flow-branch">
+                            <div class="flow-node sm"><i class="fa-solid fa-user-graduate"></i><b>Student</b><small>attempts</small></div>
+                            <div class="flow-node sm"><i class="fa-solid fa-user-shield"></i><b>Admin</b><small>manages</small></div>
+                        </div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-gears"></i><b>Exam Engine</b><small>timer · autograde</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-chart-column"></i><b>Results</b><small>dashboard</small></div>
+                    </div></div>
+                    <h4>Tech Stack</h4>
+                    <div class="modal-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="modal-links">
+                        <a href="https://onlineexaminationsystems7.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <a href="https://github.com/bapanghosh0812/Online-exam-system" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. NLP Chatbot -->
+            <div class="project-card" data-cat="ai" data-reveal data-delay="3">
+                <div class="project-image"><img src="https://placehold.co/600x400/0e0e12/e10600?text=NLP+AI+Chatbot" alt="NLP-based AI chatbot"></div>
+                <div class="project-content">
+                    <h3>NLP AI Chatbot</h3>
+                    <p class="desc">An intelligent conversational agent using NLP for automated, context-aware responses.</p>
+                    <div class="project-tech"><span>Python</span><span>NLP</span><span>AI / ML</span></div>
+                    <div class="project-actions">
+                        <a href="https://chatbot-or-mini-chatgpt.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/bapanghosh0812/Chatbot-or-mini-Chatgpt" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                        <button class="btn-details"><i class="fa-solid fa-layer-group"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-full" hidden>
+                    <h3>NLP AI Chatbot</h3>
+                    <p class="sub">Conversational AI · Python · NLP · ML</p>
+                    <p>An intelligent conversational agent that understands user queries and replies with automated, context-aware answers.</p>
+                    <h4>How I built it</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-language"></i> <span><b>NLP pipeline</b> for tokenizing and understanding intent.</span></li>
+                        <li><i class="fa-solid fa-comments"></i> <span><b>Context-aware responses</b> that improve engagement.</span></li>
+                        <li><i class="fa-solid fa-robot"></i> <span>Trained response model for automated support.</span></li>
+                    </ul>
+                    <h4>System Architecture</h4>
+                    <div class="arch"><div class="flow">
+                        <div class="flow-node"><i class="fa-solid fa-keyboard"></i><b>User Input</b><small>message</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-language"></i><b>NLP</b><small>tokenize · intent</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-brain"></i><b>Response Model</b><small>context-aware</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-comment-dots"></i><b>Reply</b><small>to user</small></div>
+                    </div></div>
+                    <h4>Tech Stack</h4>
+                    <div class="modal-tech"><span>Python</span><span>NLP</span><span>Machine Learning</span></div>
+                    <div class="modal-links">
+                        <a href="https://chatbot-or-mini-chatgpt.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <a href="https://github.com/bapanghosh0812/Chatbot-or-mini-Chatgpt" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Face Mask Detection -->
+            <div class="project-card" data-cat="ai" data-reveal data-delay="4">
+                <div class="project-image"><img src="https://placehold.co/600x400/0e0e12/e10600?text=Face+Mask+Detection" alt="Face mask detection system"></div>
+                <div class="project-content">
+                    <h3>Face Mask Detection</h3>
+                    <p class="desc">A real-time computer-vision model detecting face masks with high accuracy for public-safety monitoring.</p>
+                    <div class="project-tech"><span>Python</span><span>OpenCV</span><span>Machine Learning</span></div>
+                    <div class="project-actions">
+                        <a href="https://face-mask-detection-by-bapanghosh.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/bapanghosh0812/Face_mask_detection" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                        <button class="btn-details"><i class="fa-solid fa-layer-group"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-full" hidden>
+                    <h3>Face Mask Detection System</h3>
+                    <p class="sub">Computer Vision · Python · OpenCV · ML</p>
+                    <p>A computer-vision model that detects face masks in real time with high accuracy — built for public-safety monitoring.</p>
+                    <h4>How I built it</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-camera"></i> <span><b>Real-time detection</b> from a live camera feed.</span></li>
+                        <li><i class="fa-solid fa-wand-magic"></i> <span><b>OpenCV preprocessing</b> — face detection &amp; framing.</span></li>
+                        <li><i class="fa-solid fa-brain"></i> <span>Trained <b>ML model</b> classifying mask / no-mask with high accuracy.</span></li>
+                    </ul>
+                    <h4>System Architecture</h4>
+                    <div class="arch"><div class="flow">
+                        <div class="flow-node"><i class="fa-solid fa-camera"></i><b>Camera</b><small>frame</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-wand-magic"></i><b>OpenCV</b><small>preprocess</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-brain"></i><b>CNN Model</b><small>classify</small></div>
+                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="flow-node"><i class="fa-solid fa-square-check"></i><b>Result</b><small>mask? label</small></div>
+                    </div></div>
+                    <h4>Tech Stack</h4>
+                    <div class="modal-tech"><span>Python</span><span>OpenCV</span><span>Machine Learning</span></div>
+                    <div class="modal-links">
+                        <a href="https://face-mask-detection-by-bapanghosh.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <a href="https://github.com/bapanghosh0812/Face_mask_detection" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATES ===== -->
+    <section class="section" id="certificates">
+        <div class="section-head" data-reveal>
+            <span class="eyebrow">// proof of work</span>
+            <h2 class="section-title">Certificates &amp; <span>Credentials</span></h2>
+            <p class="section-sub">Industry certifications from Oracle, IBM, Microsoft, Google &amp; Kaggle. Click the <i class="fa-solid fa-eye"></i> on any card to view the actual certificate.</p>
+        </div>
+        <div class="certificates-grid">
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-solid fa-cloud"></i> Oracle</span>
+                    <span class="cert-date">Oct 2025</span>
+                </div>
+                <h3 class="cert-title">OCI Generative AI Professional</h3>
+                <p class="cert-desc">Professional-level certification to design, build &amp; deploy generative-AI solutions on Oracle Cloud — LLMs, RAG, embeddings &amp; vector search.</p>
+                <div class="cert-tags"><span>Generative AI</span><span>LLMs</span><span>RAG</span></div>
+                <div class="cert-foot"><span class="cert-id">ID · 102959402OCI25GAIOCP</span>
+                    <button class="cert-eye" data-img="images/certificates/cert14.jpeg" data-title="Oracle — OCI Generative AI Professional" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-solid fa-brain"></i> IBM SkillsBuild</span>
+                    <span class="cert-date">Oct 2025</span>
+                </div>
+                <h3 class="cert-title">AI Fundamentals + Capstone</h3>
+                <p class="cert-desc">Foundations of AI &amp; ML — machine learning, deep learning, NLP and computer vision — completed with a hands-on capstone project.</p>
+                <div class="cert-tags"><span>AI</span><span>Machine Learning</span><span>NLP</span></div>
+                <div class="cert-foot"><span class="cert-id">IBM SkillsBuild</span>
+                    <button class="cert-eye" data-img="images/certificates/cert3.jpeg" data-title="IBM — AI Fundamentals with Capstone" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-brands fa-microsoft"></i> Microsoft</span>
+                    <span class="cert-date">Dec 2024</span>
+                </div>
+                <h3 class="cert-title">Azure Fundamentals (AZ-900)</h3>
+                <p class="cert-desc">Core cloud concepts on Microsoft Azure — compute, storage, networking, security and cloud pricing/SLA fundamentals.</p>
+                <div class="cert-tags"><span>Azure</span><span>Cloud</span><span>DevOps</span></div>
+                <div class="cert-foot"><span class="cert-id">ID · 1D7710EDBE9E1561</span>
+                    <button class="cert-eye" data-img="images/certificates/cert17.jpeg" data-title="Microsoft Certified — Azure Fundamentals" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-brands fa-google"></i> Kaggle × Google</span>
+                    <span class="cert-date">2025</span>
+                </div>
+                <h3 class="cert-title">5-Day AI Agents Intensive</h3>
+                <p class="cert-desc">Intensive program on building AI agents — function calling, tool use, RAG and agentic workflows with generative models.</p>
+                <div class="cert-tags"><span>AI Agents</span><span>GenAI</span><span>Google</span></div>
+                <div class="cert-foot"><span class="cert-id">Kaggle × Google</span>
+                    <button class="cert-eye" data-img="images/certificates/cert12.jpeg" data-title="Kaggle × Google — 5-Day AI Agents Intensive" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-brands fa-kaggle"></i> Kaggle</span>
+                    <span class="cert-date">Nov 2025</span>
+                </div>
+                <h3 class="cert-title">Python Coder Badge</h3>
+                <p class="cert-desc">Earned for demonstrating hands-on Python programming proficiency on the Kaggle platform.</p>
+                <div class="cert-tags"><span>Python</span><span>Data</span></div>
+                <div class="cert-foot"><span class="cert-id">Kaggle Badge</span>
+                    <button class="cert-eye" data-img="images/certificates/cert8.jpeg" data-title="Kaggle — Python Coder Badge" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-brands fa-kaggle"></i> Kaggle</span>
+                    <span class="cert-date">2025</span>
+                </div>
+                <h3 class="cert-title">Dataset Creator Badge</h3>
+                <p class="cert-desc">Awarded for creating and publishing quality datasets for the data-science community.</p>
+                <div class="cert-tags"><span>Datasets</span><span>Data Science</span></div>
+                <div class="cert-foot"><span class="cert-id">Kaggle Badge</span>
+                    <button class="cert-eye" data-img="images/certificates/cert7.jpeg" data-title="Kaggle — Dataset Creator Badge" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-solid fa-award"></i> Oracle</span>
+                    <span class="cert-date">2025</span>
+                </div>
+                <h3 class="cert-title">OCI Generative AI — Digital Badge</h3>
+                <p class="cert-desc">Official Oracle digital badge recognizing the OCI 2025 Generative AI Professional credential.</p>
+                <div class="cert-tags"><span>Generative AI</span><span>OCI</span></div>
+                <div class="cert-foot"><span class="cert-id">Oracle Badge</span>
+                    <button class="cert-eye" data-img="images/certificates/cert10.jpeg" data-title="Oracle — OCI Generative AI Badge" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-solid fa-graduation-cap"></i> EDU TANTR</span>
+                    <span class="cert-date">Aug–Nov 2025</span>
+                </div>
+                <h3 class="cert-title">AIML Internship</h3>
+                <p class="cert-desc">A 4-month AI/ML internship — practical model building and real exposure to professional engineering workflows.</p>
+                <div class="cert-tags"><span>AI/ML</span><span>Internship</span></div>
+                <div class="cert-foot"><span class="cert-id">EDU TANTR</span>
+                    <button class="cert-eye" data-img="images/certificates/cert1.jpeg" data-title="EDU TANTR — AIML Internship" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-solid fa-graduation-cap"></i> EDU TANTR</span>
+                    <span class="cert-date">2025</span>
+                </div>
+                <h3 class="cert-title">AIML Course Completion</h3>
+                <p class="cert-desc">Completed the comprehensive AI/ML course covering core ML concepts and applied mini-projects.</p>
+                <div class="cert-tags"><span>AI/ML</span><span>Course</span></div>
+                <div class="cert-foot"><span class="cert-id">EDU TANTR</span>
+                    <button class="cert-eye" data-img="images/certificates/cert2.jpeg" data-title="EDU TANTR — AIML Course Completion" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-solid fa-briefcase"></i> E-Cell, IIT Guwahati</span>
+                    <span class="cert-date">2025</span>
+                </div>
+                <h3 class="cert-title">Domain Internship</h3>
+                <p class="cert-desc">Domain internship at Tripple One Solutions (with E-Cell, IIT Guwahati) — delivered on real tasks and projects.</p>
+                <div class="cert-tags"><span>Internship</span><span>Projects</span></div>
+                <div class="cert-foot"><span class="cert-id">Tripple One × IITG</span>
+                    <button class="cert-eye" data-img="images/certificates/cert5.jpeg" data-title="E-Cell IIT Guwahati — Domain Internship" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-solid fa-briefcase"></i> E-Cell, IIT Guwahati</span>
+                    <span class="cert-date">2025</span>
+                </div>
+                <h3 class="cert-title">Domain Training Program</h3>
+                <p class="cert-desc">Hands-on training program at Tripple One Solutions with an outstanding-performance remark.</p>
+                <div class="cert-tags"><span>Training</span></div>
+                <div class="cert-foot"><span class="cert-id">Tripple One × IITG</span>
+                    <button class="cert-eye" data-img="images/certificates/cert4.jpeg" data-title="E-Cell IIT Guwahati — Domain Training" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-solid fa-trophy"></i> Tripple One</span>
+                    <span class="cert-date">2025</span>
+                </div>
+                <h3 class="cert-title">Certificate of Excellence</h3>
+                <p class="cert-desc">Recognition for outstanding performance, dedication and excellence during the internship.</p>
+                <div class="cert-tags"><span>Excellence</span></div>
+                <div class="cert-foot"><span class="cert-id">Tripple One Solutions</span>
+                    <button class="cert-eye" data-img="images/certificates/cert9.jpeg" data-title="Tripple One — Certificate of Excellence" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-solid fa-building-columns"></i> BCET</span>
+                    <span class="cert-date">Mar 2024</span>
+                </div>
+                <h3 class="cert-title">DataSculpt STTP — ML &amp; Data Science</h3>
+                <p class="cert-desc">International Short-Term Training Program on Machine Learning &amp; Data Science, by the Dept. of IT, CSE &amp; CSE (AI-ML).</p>
+                <div class="cert-tags"><span>Machine Learning</span><span>Data Science</span></div>
+                <div class="cert-foot"><span class="cert-id">BCET, Durgapur</span>
+                    <button class="cert-eye" data-img="images/certificates/cert15.jpeg" data-title="BCET — DataSculpt STTP (ML & Data Science)" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-solid fa-building-columns"></i> BCET</span>
+                    <span class="cert-date">Jan 2024</span>
+                </div>
+                <h3 class="cert-title">Information Security Workshop</h3>
+                <p class="cert-desc">One-day workshop on Information Security, jointly organized by the Departments of IT, CSE &amp; CSE (AI-ML).</p>
+                <div class="cert-tags"><span>Security</span></div>
+                <div class="cert-foot"><span class="cert-id">BCET, Durgapur</span>
+                    <button class="cert-eye" data-img="images/certificates/cert13.jpeg" data-title="BCET — Information Security Workshop" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-solid fa-code"></i> PVG COE, Nashik</span>
+                    <span class="cert-date">Dec 2024</span>
+                </div>
+                <h3 class="cert-title">Data Structures using C</h3>
+                <p class="cert-desc">Cleared the Data Structure using C assessment with a valid score — organized by the E&amp;TC department.</p>
+                <div class="cert-tags"><span>DSA</span><span>C</span></div>
+                <div class="cert-foot"><span class="cert-id">ID · CPIZG8-CE034206</span>
+                    <button class="cert-eye" data-img="images/certificates/cert16.jpeg" data-title="PVG COE Nashik — Data Structures using C" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+            <article class="cert-card" data-reveal>
+                <div class="cert-head">
+                    <span class="cert-issuer"><i class="fa-brands fa-css3-alt"></i> KnowledgeGate</span>
+                    <span class="cert-date">2025</span>
+                </div>
+                <h3 class="cert-title">CSS Certification Test</h3>
+                <p class="cert-desc">Passed the CSS certification test covering modern styling, layout techniques and responsive design.</p>
+                <div class="cert-tags"><span>CSS</span><span>Web</span></div>
+                <div class="cert-foot"><span class="cert-id">KnowledgeGate</span>
+                    <button class="cert-eye" data-img="images/certificates/cert6.jpeg" data-title="KnowledgeGate — CSS Certification Test" aria-label="View certificate"><i class="fa-solid fa-eye"></i></button></div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Lightbox (certificate viewer) -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-btn" id="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-btn" id="lightbox-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-stage">
+            <img src="" alt="Certificate preview" id="lightbox-img">
+            <div id="lightbox-title"></div>
+        </div>
+        <button class="lightbox-btn" id="lightbox-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        <span id="lightbox-counter"></span>
+    </div>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+        <div class="section-head" data-reveal>
+            <span class="eyebrow">// let's build something</span>
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <p class="section-sub">Looking for a driven intern or a developer who ships? Let's talk — I usually reply within a day.</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info" data-reveal>
+                <p>I'm actively seeking <strong>internships and opportunities</strong> where I can build real products and grow fast. Reach out through any channel below — I'd love to hear from you.</p>
+                <div class="contact-details">
+                    <a href="mailto:bapanghosh081204@gmail.com" class="contact-item">
+                        <span class="ci-icon"><i class="fa-solid fa-envelope"></i></span>
+                        <span>Email<small>bapanghosh081204@gmail.com</small></span>
+                    </a>
+                    <div class="contact-item">
+                        <span class="ci-icon"><i class="fa-solid fa-phone"></i></span>
+                        <span>Phone<small><a href="tel:+919883290273" class="contact-link">+91 98832 90273</a> · <a href="tel:+917501529371" class="contact-link">+91 75015 29371</a></small></span>
+                    </div>
+                    <a href="https://maps.app.goo.gl/sWcP4sQ3jsQwpuXP7" target="_blank" rel="noopener" class="contact-item">
+                        <span class="ci-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Location<small>Kumidya, Bankura, West Bengal – 722146</small></span>
+                    </a>
+                    <a href="https://bapanghosh.netlify.app/" target="_blank" rel="noopener" class="contact-item">
+                        <span class="ci-icon"><i class="fa-solid fa-globe"></i></span>
+                        <span>Website<small>bapanghosh.netlify.app</small></span>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/bapanghosh0812" class="social-link" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/bapan-ghosh-5676803a2" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/919883290273?text=Hello%20Bapan!" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://leetcode.com/u/BAPAN_GHOSH_07/" class="social-link" aria-label="LeetCode" target="_blank" rel="noopener"><i class="fa-solid fa-code"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form" data-reveal data-delay="1">
+                <form id="contact-form">
+                    <input type="hidden" name="access_key" value="5c2c7ae7-088d-495c-8f7a-cd2b8e401bb6">
+                    <input type="hidden" name="subject" value="New message from portfolio website">
+                    <input type="hidden" name="from_name" value="Bapan Ghosh Portfolio">
+                    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+                    <div class="form-group">
+                        <label for="cf-name">Your Name</label>
+                        <input id="cf-name" type="text" placeholder="e.g. Priya Sharma" required name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="cf-email">Your Email</label>
+                        <input id="cf-email" type="email" placeholder="you@company.com" required name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="cf-msg">Message</label>
+                        <textarea id="cf-msg" name="message" placeholder="Tell me about the internship or opportunity…" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <b>Bapan Ghosh</b>
+                <p>Full-Stack &amp; Cross-Platform Developer · DevOps Enthusiast</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/bapanghosh0812" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bapan-ghosh-5676803a2" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/919883290273" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:bapanghosh081204@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <p class="footer-copy">© <span id="year">2026</span> Bapan Ghosh. Built with ❤️, HTML, CSS, JavaScript &amp; Three.js.</p>
+    </footer>
+
+    <button id="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Project modal -->
+    <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-label="Project details">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Guided tour -->
+    <div class="tour-overlay" id="tour-overlay"></div>
+    <div class="tour-card" id="tour-card">
+        <div class="tour-emoji" id="tour-emoji">👋</div>
+        <h3 id="tour-title">Hey there!</h3>
+        <p id="tour-text"></p>
+        <div class="tour-progress" id="tour-progress"></div>
+        <div class="tour-buttons">
+            <button class="tour-btn tour-skip" id="tour-skip">Skip</button>
+            <button class="tour-btn tour-next" id="tour-next">Next ➜</button>
+        </div>
+    </div>
+    <button class="tour-restart" id="tour-restart" title="Take the tour again">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+    </button>
+
+</body>
+</html>
