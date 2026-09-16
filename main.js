@@ -552,7 +552,6 @@
       { emoji: "📬", title: "Let's Connect", text: "Looking for a driven intern or a developer who ships? Message, call or WhatsApp me — I reply fast. 📞", target: "#contact" },
       { emoji: "🎉", title: "Tour Complete!", text: "You've seen it all 🏆 Now go touch, click and explore everything. Thanks for visiting — hope to hear from you! 🙌", target: null, btn: "Start Exploring! 🔥" },
     ];
-
     let idx = 0, hl = null;
     const clearHl = () => { if (hl) hl.classList.remove("tour-highlight"); hl = null; header && header.classList.remove("tour-raise"); };
     const show = (i) => {
