@@ -475,49 +475,54 @@
     </div>
 </div>
 
-            <!-- 3. Rescuen Web -->
-            <div class="project-card" data-cat="web" data-reveal data-delay="2">
-                <div class="project-image"><img src="images/projects/rescuen-web.jpeg" alt="Rescuen Web dashboard"></div>
-                <div class="project-content">
-                    <h3>Rescuen Web</h3>
-                    <p class="desc">Official web platform for Rescuen — dashboard, SOS alert tracking, profile setup and an AI-powered help center.</p>
-                    <div class="project-tech"><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Express</span></div>
-                    <div class="project-actions">
-                        <a href="https://rescuen-web.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
-                        <a href="https://github.com/bapanghosh0812" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
-                        <button class="btn-details"><i class="fa-solid fa-layer-group"></i> View Details</button>
-                    </div>
-                </div>
-                <div class="project-full" hidden>
-                    <h3>Rescuen Web</h3>
-                    <p class="sub">Web Companion · React · TypeScript · Tailwind · Express</p>
-                    <p>The web companion to the Rescuen app — a responsive dashboard that brings safety tools to the browser.</p>
-                    <h4>How I built it</h4>
-                    <ul class="feature-list">
-                        <li><i class="fa-solid fa-gauge"></i> <span>Central <b>dashboard</b> with SOS alert tracking &amp; history.</span></li>
-                        <li><i class="fa-solid fa-user-gear"></i> <span>Profile &amp; emergency-contact setup flows.</span></li>
-                        <li><i class="fa-solid fa-robot"></i> <span><b>AI-powered help center</b> for instant safety guidance.</span></li>
-                    </ul>
-                    <h4>System Architecture</h4>
-                    <div class="arch"><div class="flow">
-                        <div class="flow-node"><i class="fa-brands fa-react"></i><b>Browser</b><small>React · TS</small></div>
-                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                        <div class="flow-node"><i class="fa-brands fa-node-js"></i><b>API</b><small>Express · Node</small></div>
-                        <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                        <div class="flow-branch">
-                            <div class="flow-node sm"><i class="fa-solid fa-fire"></i><b>Firebase</b><small>data</small></div>
-                            <div class="flow-node sm"><i class="fa-solid fa-robot"></i><b>AI Help</b><small>LLM</small></div>
-                        </div>
-                    </div></div>
-                    <h4>Tech Stack</h4>
-                    <div class="modal-tech"><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Express</span><span>Node.js</span><span>Firebase</span></div>
-                    <div class="modal-links">
-                        <a href="https://rescuen-web.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                        <a href="https://github.com/bapanghosh0812" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-                    </div>
-                </div>
+<!-- 3. Rescuen Web -->
+<div class="project-card" data-cat="web" data-reveal data-delay="2">
+    <div class="project-image"><img src="images/projects/rescuen-web.jpeg" alt="Rescuen Web — official RESCUEN website"></div>
+    <div class="project-content">
+        <h3>Rescuen Web</h3>
+        <p class="desc">Official website for RESCUEN — a premium, passwordless (phone + OTP) safety platform with a live AI assistant, a real contact center that emails &amp; auto-replies, and a secure serverless backend.</p>
+        <div class="project-tech"><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>Firebase</span><span>Gemini AI</span></div>
+        <div class="project-actions">
+            <a href="https://rescuen-web.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+            <a href="https://github.com/bapanghosh0812/rescuen-web" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            <button class="btn-details"><i class="fa-solid fa-layer-group"></i> View Details</button>
+        </div>
+    </div>
+    <div class="project-full" hidden>
+        <h3>Rescuen Web</h3>
+        <p class="sub">Official Website · Next.js · TypeScript · Tailwind · Firebase · Gemini AI</p>
+        <p>The official web platform for the RESCUEN personal-safety app — a premium, fully responsive site with a secure, passwordless login, an AI safety companion, and a real working contact center, all served over a Next.js serverless backend.</p>
+        <h4>How I built it</h4>
+        <ul class="feature-list">
+            <li><i class="fa-solid fa-key"></i> <span>Passwordless <b>phone → OTP login</b> (Firebase, invisible reCAPTCHA), verified server-side with the Firebase Admin SDK.</span></li>
+            <li><i class="fa-solid fa-robot"></i> <span><b>AI Safety Assistant</b> powered by Google <b>Gemini</b>, running server-side so keys never reach the browser.</span></li>
+            <li><i class="fa-solid fa-envelope-circle-check"></i> <span>Real <b>contact center</b> — messages email straight to Gmail and the sender gets an instant branded <b>auto-reply</b> (Nodemailer).</span></li>
+            <li><i class="fa-solid fa-wand-magic-sparkles"></i> <span>Premium white UI with <b>3D motion</b> (Framer Motion), glassmorphism &amp; full mobile responsiveness.</span></li>
+            <li><i class="fa-solid fa-shield-halved"></i> <span><b>Secure by design</b> — CSP + security headers, rate-limiting, input validation (Zod), honeypot, and server-only secrets.</span></li>
+            <li><i class="fa-solid fa-scale-balanced"></i> <span>Complete trust suite — Terms, Privacy, Disclaimer, Refund &amp; Cookie pages, plus SEO &amp; JSON-LD structured data.</span></li>
+        </ul>
+        <h4>System Architecture</h4>
+        <div class="arch"><div class="flow">
+            <div class="flow-node"><i class="fa-brands fa-react"></i><b>Browser</b><small>Next.js · React · TS</small></div>
+            <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+            <div class="flow-node"><i class="fa-solid fa-shield-halved"></i><b>Security Layer</b><small>CSP · rate-limit</small></div>
+            <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+            <div class="flow-node"><i class="fa-solid fa-server"></i><b>API Routes</b><small>Node · serverless</small></div>
+            <span class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+            <div class="flow-branch">
+                <div class="flow-node sm"><i class="fa-solid fa-fire"></i><b>Firebase Auth</b><small>Phone OTP</small></div>
+                <div class="flow-node sm"><i class="fa-solid fa-robot"></i><b>Gemini AI</b><small>LLM</small></div>
+                <div class="flow-node sm"><i class="fa-solid fa-envelope"></i><b>Gmail SMTP</b><small>Nodemailer</small></div>
             </div>
-
+        </div></div>
+        <h4>Tech Stack</h4>
+        <div class="modal-tech"><span>Next.js 15</span><span>React 19</span><span>TypeScript</span><span>Tailwind CSS</span><span>Framer Motion</span><span>Firebase Auth</span><span>Firebase Admin</span><span>Node.js</span><span>Nodemailer</span><span>Google Gemini</span><span>Zod</span><span>Netlify</span></div>
+        <div class="modal-links">
+            <a href="https://rescuen-web.netlify.app/" class="btn-demo" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            <a href="https://github.com/bapanghosh0812/rescuen-web" class="btn-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+    </div>
+</div>
             <!-- 4. ColorCraft -->
             <div class="project-card" data-cat="web ai" data-reveal data-delay="3">
                 <div class="project-image"><img src="images/projects/Color-Craft.png" alt="ColorCraft — AI coloring book generator"></div>
