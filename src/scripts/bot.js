@@ -106,7 +106,7 @@ async function send(text) {
   setChips([]);
   const { row, bubble } = addMsg("bot", "", [], { save: false });
   bubble.replaceChildren(h("span", { class: "typing", "aria-label": "Mini Bapan is typing" }, h("i"), h("i"), h("i")));
-  let full = "", actions = [], ok = false;
+  let full = "", actions = [], ok = false, frame = 0, finished = false;
   try {
     const res = await fetch("/api/chat", {
       method: "POST",
@@ -115,8 +115,8 @@ async function send(text) {
     });
     if (!res.ok || !res.body) throw new Error(String(res.status));
     const reader = res.body.getReader(), td = new TextDecoder();
-    let buf = "", frame = 0;
-    const paint = () => { frame = 0; bubble.replaceChildren(render(full)); bubble.classList.add("caret"); scrollDown(); };
+    let buf = "";
+    const paint = () => { frame = 0; if (finished) return; bubble.replaceChildren(render(full)); bubble.classList.add("caret"); scrollDown(); };
     for (;;) {
       const { value, done } = await reader.read();
       if (done) break;
@@ -145,6 +145,9 @@ async function send(text) {
       actions = [{ type: "scroll", label: "Contact options", target: "contact", icon: "send" }];
     }
   }
+  // stop any streaming repaint still queued — it used to wipe the action buttons after they were added
+  finished = true;
+  if (frame) { cancelAnimationFrame(frame); frame = 0; }
   bubble.classList.remove("caret");
   bubble.replaceChildren(render(full));
   const acts = actions.map(actionEl).filter(Boolean);

@@ -1,4 +1,5 @@
 import { esc, icon, brand, enc, jsonLd, assets } from "./lib.mjs";
+import { watchSvg } from "./timepiece.mjs";
 
 const NAV = [
   ["about", "About"],
@@ -9,7 +10,8 @@ const NAV = [
   ["contact", "Contact"],
 ];
 
-export const THEME_INIT = `(function(){var d=document.documentElement;d.classList.add("js");try{var t=localStorage.getItem("bg-theme");if(t==="ivory"||t==="noir")d.setAttribute("data-theme",t)}catch(e){}})();`;
+// Theme: a manual choice (saved) wins; otherwise follow the device's light/dark setting.
+export const THEME_INIT = `(function(){var d=document.documentElement,t=null;d.classList.add("js");try{t=localStorage.getItem("bg-theme")}catch(e){}if(t!=="ivory"&&t!=="noir")t=matchMedia("(prefers-color-scheme: light)").matches?"ivory":"noir";d.setAttribute("data-theme",t)})();`;
 
 export const SPECULATION = JSON.stringify({ prefetch: [{ where: { href_matches: "/work/*" }, eagerness: "moderate" }] });
 
@@ -113,9 +115,17 @@ function footer({ data, home }) {
         <button class="btn btn--ghost" type="button" data-bot-open>${icon("message-circle")}<span>Ask Mini Bapan</span></button>
       </div>
     </div>
+    <div class="timepiece" data-timepiece>
+      <div class="watch">${watchSvg()}</div>
+      <div class="datebar" role="group" aria-label="Today's date">
+        <img class="datebar__art" src="/assets/img/timepiece/datebar.webp" width="992" height="408" alt="" loading="lazy" decoding="async">
+        <time class="datebar__date" data-tp-date></time>
+        <span class="datebar__day" data-tp-day></span>
+      </div>
+    </div>
     <div class="footer__grid">
       <div class="footer__brand">
-        <span class="logo footer__logo" aria-hidden="true"><video class="logo__video" muted loop playsinline preload="none" disablepictureinpicture poster="/assets/brand/logo-poster.webp" data-src="/assets/brand/logo.mp4" width="64" height="64"></video></span>
+        <span class="logo footer__logo" aria-hidden="true"><video class="logo__video" muted playsinline preload="none" disablepictureinpicture poster="/assets/brand/logo-full-poster.webp" data-src="/assets/brand/logo-full.mp4" width="160" height="160"></video></span>
         <p><b>${esc(p.name)}</b><br>${esc(p.headline)} · ${esc(p.subheadline)}</p>
         <p class="footer__status"><span class="pulse-dot"></span>${esc(p.availability.split(";")[0])}</p>
       </div>

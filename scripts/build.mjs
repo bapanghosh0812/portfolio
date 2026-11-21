@@ -121,7 +121,7 @@ function buildSprite(used) {
 }
 
 /* --------------------------------------------------------------------- css */
-const CSS_ORDER = ["tokens.css", "base.css", "layout.css", "components.css", "sections.css", "work.css", "bot.css", "palette.css"];
+const CSS_ORDER = ["tokens.css", "base.css", "layout.css", "components.css", "sections.css", "work.css", "timepiece.css", "bot.css", "palette.css"];
 let css = CSS_ORDER.map((f) => readFileSync(rel("src/styles", f), "utf8")).join("\n");
 css = css.replace(/\/\*[\s\S]*?\*\//g, "").replace(/\s+/g, " ").replace(/\s*([{};])\s*/g, "$1").replace(/;}/g, "}").trim();
 const cssPath = `/assets/css/app.${sha(css)}.css`;

@@ -7,8 +7,8 @@
   border: 1px solid var(--line-2); background: rgba(212, 175, 55, 0.05); font: 500 13px/1 var(--font-sans); color: var(--text);
 }
 .hero__eyebrow { margin-top: 26px; }
-.hero__name { margin-top: 12px; font: 600 clamp(66px, 10.6vw, 172px)/0.86 var(--font-display); letter-spacing: -0.03em; color: var(--ivory); }
-.hero__name .line { display: block; overflow: hidden; padding: 0 0.04em 0.11em 0; margin-bottom: -0.11em; }
+.hero__name { margin-top: 14px; font: 600 clamp(46px, 6.2vw, 96px)/1 var(--font-display); letter-spacing: -0.02em; color: var(--ivory); }
+.hero__name .line { display: inline-block; vertical-align: top; overflow: hidden; padding: 0 0.04em 0.11em 0; margin-bottom: -0.11em; }
 .hero__name .line > span { display: inline-block; }
 .js .hero__name .line > span { animation: line-up 1.2s var(--ease) both; }
 .js .hero__name .line + .line > span { animation-delay: 0.1s; }
@@ -290,3 +290,5 @@
   .tl__card { padding: 20px 18px 22px; }
   .scroll-cue { display: none; }
 }
+.skill--wide { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
+.skill--wide header { margin-bottom: 0; }

@@ -18,34 +18,36 @@ function initTheme() {
     if (meta) meta.setAttribute("content", ivory ? "#F6F1E6" : "#0A0A0B");
   };
   sync();
-  $$("[data-theme-toggle]").forEach((btn) => btn.addEventListener("click", (e) => {
-    const next = root.dataset.theme === "ivory" ? "noir" : "ivory";
-    const apply = () => { root.dataset.theme = next; store.set("bg-theme", next); sync(); };
-    if (document.startViewTransition && !REDUCE) {
+  const swap = (next, e, save) => {
+    if (root.dataset.theme === next) return;
+    const apply = () => { root.dataset.theme = next; if (save) store.set("bg-theme", next); sync(); };
+    if (document.startViewTransition && !REDUCE && e) {
       root.style.setProperty("--vt-x", `${e.clientX || innerWidth - 60}px`);
       root.style.setProperty("--vt-y", `${e.clientY || 30}px`);
       document.startViewTransition(apply);
     } else apply();
-  }));
+  };
+  // manual switch (remembered)
+  $$("[data-theme-toggle]").forEach((btn) => btn.addEventListener("click", (e) => swap(root.dataset.theme === "ivory" ? "noir" : "ivory", e, true)));
+  // system default: follow the device live until the visitor picks a theme manually
+  const sys = matchMedia("(prefers-color-scheme: light)");
+  sys.addEventListener("change", (m) => { if (!store.get("bg-theme")) swap(m.matches ? "ivory" : "noir", null, false); });
+  // palette action "follow system theme" clears the manual choice
+  document.addEventListener("theme:system", () => { try { localStorage.removeItem("bg-theme"); } catch {} swap(sys.matches ? "ivory" : "noir", null, false); toast("Theme now follows your device"); });
 }
 
 /* ------------------------------------------------- header + scroll fx */
 function initHeader() {
   const header = $("[data-header]");
   const bar = $(".scroll-progress span");
-  let lastY = scrollY, ticking = false;
+  let ticking = false;
+  // the header stays put (no hide/show on scroll) — it only gains a glass background once you scroll
   const update = () => {
     ticking = false;
     const y = scrollY;
     const max = document.documentElement.scrollHeight - innerHeight;
     if (bar) bar.style.setProperty("transform", `scaleX(${max > 0 ? Math.min(1, y / max) : 0})`);
-    if (header) {
-      header.classList.toggle("is-scrolled", y > 24);
-      const menuOpen = document.body.classList.contains("no-scroll");
-      header.classList.toggle("is-hidden", !menuOpen && y > 480 && y > lastY + 4);
-      if (y < lastY - 4 || y < 480) header.classList.remove("is-hidden");
-    }
-    lastY = y;
+    if (header) header.classList.toggle("is-scrolled", y > 24);
   };
   addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
   update();
@@ -430,9 +432,84 @@ function initBackground() {
   if (document.readyState === "complete") setTimeout(start, 400); else addEventListener("load", () => setTimeout(start, 400), { once: true });
 }
 
+/* -------------------------------- Mini Bapan launcher: drag it anywhere */
+// Drag the launcher to any spot; on release it glides to the nearest side and remembers the place.
+function initBotDrag() {
+  const dock = $("[data-bot-dock]"), btn = dock && $(".bot-launcher", dock);
+  if (!btn) return;
+  const GAP = 18, KEY = "bg-bot-pos";
+  const vh = () => window.visualViewport ? visualViewport.height : innerHeight;
+  const clampB = (b) => Math.round(Math.min(Math.max(b, GAP), Math.max(GAP, vh() - btn.offsetHeight - 84)));
+  const place = (side, bottom) => {
+    dock.classList.toggle("is-left", side === "l");
+    root.classList.toggle("bot-left", side === "l");
+    dock.style.bottom = bottom == null ? "" : `${clampB(bottom)}px`;
+  };
+  let saved = null;
+  try { saved = JSON.parse(store.get(KEY) || "null"); } catch {}
+  if (saved && (saved.s === "l" || saved.s === "r") && Number.isFinite(saved.b)) place(saved.s, saved.b);
+  addEventListener("resize", () => { if (saved) place(saved.s, saved.b); }, { passive: true });
+
+  let start = null, moved = false, dropped = 0;
+  btn.addEventListener("pointerdown", (e) => {
+    if (e.button !== 0) return;
+    const r = btn.getBoundingClientRect();
+    start = { x: e.clientX, y: e.clientY, r, id: e.pointerId };
+    moved = false;
+  });
+  btn.addEventListener("pointermove", (e) => {
+    if (!start || e.pointerId !== start.id) return;
+    const dx = e.clientX - start.x, dy = e.clientY - start.y;
+    if (!moved) {
+      if (Math.hypot(dx, dy) < 7) return;
+      moved = true;
+      try { btn.setPointerCapture(e.pointerId); } catch {}
+      dock.classList.add("is-dragging");
+      const t = $("[data-bot-teaser]"); if (t) t.hidden = true; session.set("bg-teaser", "1");
+    }
+    // keep the whole button on screen while it follows the finger / cursor
+    const x = Math.min(Math.max(dx, -start.r.left + 6), innerWidth - start.r.right - 6);
+    const y = Math.min(Math.max(dy, -start.r.top + 6), vh() - start.r.bottom - 6);
+    dock.style.transform = `translate(${x}px, ${y}px)`;
+  });
+  const drop = (e) => {
+    if (!start || e.pointerId !== start.id) return;
+    start = null;
+    if (!moved) return;
+    moved = false;
+    dropped = performance.now();
+    // FLIP: snap to the nearest side, then animate from where it was dropped
+    const before = btn.getBoundingClientRect();
+    const side = before.left + before.width / 2 < innerWidth / 2 ? "l" : "r";
+    const bottom = vh() - before.bottom;
+    dock.classList.remove("is-dragging");
+    dock.style.transform = "";
+    place(side, bottom);
+    saved = { s: side, b: clampB(bottom) };
+    store.set(KEY, JSON.stringify(saved));
+    const after = btn.getBoundingClientRect();
+    if (!REDUCE) btn.animate([{ transform: `translate(${before.left - after.left}px, ${before.top - after.top}px) scale(1.08)` }, { transform: "none" }], { duration: 620, easing: "cubic-bezier(.2,1.25,.35,1)" });
+  };
+  btn.addEventListener("pointerup", drop);
+  btn.addEventListener("pointercancel", drop);
+  // a drag is not a tap: swallow the click that follows it so the chat doesn't open
+  btn.addEventListener("click", (e) => { if (performance.now() - dropped < 450) { e.preventDefault(); e.stopImmediatePropagation(); } }, true);
+  btn.addEventListener("dragstart", (e) => e.preventDefault());
+}
+
+/* --------------------------------------------- footer timepiece (lazy) */
+function initTimepiece() {
+  const el = $("[data-timepiece]");
+  if (!el) return;
+  const load = () => import("./timepiece.js").then((m) => m.start(el)).catch(() => {});
+  if (!("IntersectionObserver" in window)) return load();
+  const io = new IntersectionObserver((en) => { if (en.some((e) => e.isIntersecting)) { io.disconnect(); load(); } }, { rootMargin: "800px 0px" });
+  io.observe(el);
+}
+
 /* ------------------------------------------------------------------- boot */
 function boot() {
-  const steps = [initTheme, initHeader, initMenu, initReveal, initCounters, initTyped, initPointerFx, initFilters, initLightbox, initContactDetails, initContactForm, initGithub, initBotTriggers, initPalette, initLogoVideo, initBackground];
+  const steps = [initTheme, initHeader, initMenu, initReveal, initCounters, initTyped, initPointerFx, initFilters, initLightbox, initContactDetails, initContactForm, initGithub, initBotTriggers, initBotDrag, initPalette, initLogoVideo, initTimepiece, initBackground];
   for (const s of steps) { try { s(); } catch (err) { console.error(`[portfolio] ${s.name} failed`, err); } }
   console.log("%cBapan Ghosh%c — Full-Stack & Cross-Platform Developer\nLike what you see? Let's talk → %s/#contact", "font:600 22px Georgia,serif;color:#D4AF37", "font:13px system-ui;color:#A69F8D", location.origin);
 }

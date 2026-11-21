@@ -29,11 +29,18 @@ ${inner}
 </table></td></tr></table></body></html>`;
 }
 
+/** "Received at" timer photo (attached inline as cid:timer@bapanghosh by the contact function). */
+const timerBlock = (when) => when ? `
+<tr><td align="center" style="padding:26px 26px 0;">
+  <img src="cid:timer@bapanghosh" width="540" alt="Received ${esc(when)}" style="display:block;width:100%;max-width:540px;height:auto;border:0;border-radius:14px;">
+  <p style="margin:10px 0 0;font:400 12.5px/1.5 ${SANS};color:${MUTED};">Received ${esc(when)}</p>
+</td></tr>` : "";
+
 const button = (href, label, primary = true) =>
   `<a href="${href}" style="display:inline-block;margin:6px 4px;padding:14px 22px;border-radius:999px;font:600 14px/1 ${SANS};text-decoration:none;${primary ? `background:${GOLD};color:#16120A;border:1px solid ${GOLD};` : `background:transparent;color:${IVORY};border:1px solid #5c4d22;`}">${label}</a>`;
 
 /** Auto-reply to the visitor. Their message is intentionally NOT echoed back (prevents spam reflection). */
-export function autoReplyEmail({ site, firstName, topic, ticket, email, whatsapp, linkedin, kind = "contact" }) {
+export function autoReplyEmail({ site, firstName, topic, ticket, email, whatsapp, linkedin, kind = "contact", when = "" }) {
   const isIssue = kind === "issue";
   const hello = firstName ? `Namaste, ${esc(firstName)}` : "Namaste";
   const lead = isIssue
@@ -58,7 +65,7 @@ export function autoReplyEmail({ site, firstName, topic, ticket, email, whatsapp
       Typical reply time: <span style="color:${IVORY};">within 24 hours</span>
     </td></tr>
   </table>
-</td></tr>
+</td></tr>${timerBlock(when)}
 <tr><td align="center" style="padding:30px 26px 8px;">
   ${button(`${site}/?utm_source=email&amp;utm_medium=autoreply`, "Return to the portfolio")}
   ${button(`${site}/#projects`, "Explore projects", false)}
@@ -82,7 +89,8 @@ export function autoReplyEmail({ site, firstName, topic, ticket, email, whatsapp
 ${lead}
 
 Reference: ${ticket}
-${isIssue ? "Type" : "Topic"}: ${topic}
+${isIssue ? "Type" : "Topic"}: ${topic}${when ? `
+Received: ${when}` : ""}
 
 Portfolio: ${site}
 Projects: ${site}/#projects
@@ -95,7 +103,7 @@ ${email} · https://wa.me/${whatsapp}
 }
 
 /** Notification to Bapan with everything needed to reply in one tap. */
-export function notifyEmail({ site, kind, fields, ticket, meta }) {
+export function notifyEmail({ site, kind, fields, ticket, meta, when = "" }) {
   const rows = Object.entries(fields).filter(([, v]) => v).map(([k, v]) => `
     <tr><td style="padding:10px 14px;border-bottom:1px solid #2c271a;font:600 11px/1.5 ${SANS};letter-spacing:1.5px;text-transform:uppercase;color:${GOLD};vertical-align:top;width:120px;">${esc(k)}</td>
     <td style="padding:10px 14px;border-bottom:1px solid #2c271a;font:400 15px/1.65 ${SANS};color:${IVORY};white-space:pre-wrap;word-break:break-word;">${esc(v)}</td></tr>`).join("");
@@ -108,7 +116,7 @@ export function notifyEmail({ site, kind, fields, ticket, meta }) {
   <p style="margin:0;font:600 12px/1 ${SANS};letter-spacing:4px;text-transform:uppercase;color:${GOLD};">${kind === "issue" ? "Issue report" : "New portfolio message"} · ${esc(ticket)}</p>
   <h1 style="margin:12px 0 0;font:600 32px/1.15 ${SERIF};color:${IVORY};">${kind === "issue" ? "Someone reported an issue" : `${esc(fields.Name || "Someone")} wants to connect`}</h1>
 </td></tr>
-<tr><td style="padding:14px 30px 6px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #2c271a;border-radius:14px;">${rows}</table></td></tr>
+<tr><td style="padding:14px 30px 6px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #2c271a;border-radius:14px;">${rows}</table></td></tr>${timerBlock(when)}
 <tr><td style="padding:20px 30px 8px;">${reply}</td></tr>
 <tr><td style="padding:10px 30px 30px;font:400 12px/1.7 ${SANS};color:#6E695D;">${metaRows}</td></tr>
 </table>`;

@@ -8,13 +8,14 @@ import { resolveMx } from "node:dns/promises";
 import data from "../../data/portfolio.json" with { type: "json" };
 import { json, originAllowed, clientIp, limited, readJson, cleanText } from "../lib/http.mjs";
 import { autoReplyEmail, notifyEmail } from "../lib/email.mjs";
+import { renderTimer, timeParts } from "../lib/timer.mjs";
 
 export const config = {
   path: "/api/contact",
   rateLimit: { windowLimit: 20, windowSize: 60, aggregateBy: ["ip", "domain"] },
 };
 
-const TOPICS = ["Internship opportunity", "Full-time role (2027)", "Freelance / project", "Collaboration", "Just saying hello"];
+const TOPICS = ["Full-time role", "Internship", "Freelance / project", "Collaboration", "Just saying hello"];
 const ISSUES = ["Something is broken", "Broken link", "Wrong or outdated info", "Display / design problem", "Suggestion", "Other"];
 const SITE = data.site.url;
 
@@ -108,8 +109,19 @@ export default async (req, context) => {
   if (email && wantsReply && limited(`ct:to:${email}`, 3, 864e5)) wantsReply = false;
 
   const from = { name: "Bapan Ghosh", address: smtpUser() };
+  // the peacock "timer photo" frozen at the moment this message arrived (IST)
+  const now = new Date();
+  let timer = null, when = "";
   try {
-    const note = notifyEmail({ site: SITE, kind, fields, ticket: id, meta });
+    const t = timeParts(now);
+    when = `${t.weekday}, ${t.day} ${t.month} ${t.year} · ${t.hour}:${t.minute} ${t.ampm} IST`;
+    timer = { filename: "received-at.png", content: renderTimer(now), cid: "timer@bapanghosh", contentType: "image/png", contentDisposition: "inline" };
+  } catch (err) {
+    console.warn("[contact] timer image skipped:", err && err.message);
+  }
+  const attachments = timer ? [timer] : [];
+  try {
+    const note = notifyEmail({ site: SITE, kind, fields, ticket: id, meta, when: timer ? when : "" });
     await transport().sendMail({
       from: { name: "Portfolio · Mini Bapan", address: smtpUser() },
       to: process.env.CONTACT_INBOX || smtpUser(),
@@ -117,6 +129,7 @@ export default async (req, context) => {
       subject,
       text: note.text,
       html: note.html,
+      attachments,
       headers: { "X-Entity-Ref-ID": id },
     });
   } catch (err) {
@@ -126,7 +139,7 @@ export default async (req, context) => {
 
   if (wantsReply) {
     const social = Object.fromEntries(data.person.socials.map((s) => [s.id, s.url]));
-    const mail = autoReplyEmail({ site: SITE, firstName, topic, ticket: id, email: data.person.contact.email, whatsapp: data.person.contact.whatsapp, linkedin: social.linkedin, kind });
+    const mail = autoReplyEmail({ site: SITE, firstName, topic, ticket: id, email: data.person.contact.email, whatsapp: data.person.contact.whatsapp, linkedin: social.linkedin, kind, when: timer ? when : "" });
     try {
       await transport().sendMail({
         from,
@@ -135,6 +148,7 @@ export default async (req, context) => {
         subject: kind === "issue" ? `Thanks for the report 🙏 — ref ${id}` : `Namaste${firstName ? " " + firstName : ""} 🙏 — thank you for reaching out to Bapan Ghosh`,
         text: mail.text,
         html: mail.html,
+        attachments,
         headers: { "Auto-Submitted": "auto-replied", "X-Auto-Response-Suppress": "All", "X-Entity-Ref-ID": id },
       });
     } catch (err) {

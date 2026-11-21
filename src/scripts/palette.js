@@ -30,6 +30,7 @@ function collect() {
     { g: "Actions", label: "Copy email address", icon: "copy", run: async () => { const v = dec(mail ? mail.dataset.mail : ""); try { await navigator.clipboard.writeText(v); toast("Email address copied"); } catch { toast(v); } } },
     { g: "Actions", label: "Chat on WhatsApp", icon: "message-circle", run: () => window.open("/whatsapp", "_blank", "noopener") },
     { g: "Actions", label: "Switch light / dark theme", icon: "sun", run: () => { const b = $("[data-theme-toggle]"); if (b) b.click(); } },
+    { g: "Actions", label: "Theme: follow my device (system)", icon: "monitor-smartphone", run: () => document.dispatchEvent(new Event("theme:system")) },
     { g: "Actions", label: "Report an issue", icon: "bug", run: () => opts.openBot && opts.openBot({ view: "report" }) },
     { g: "Profiles", label: "GitHub", icon: "code", run: () => window.open("/github", "_blank", "noopener") },
     { g: "Profiles", label: "LinkedIn", icon: "user", run: () => window.open("/linkedin", "_blank", "noopener") },
@@ -69,9 +70,12 @@ function highlight(listEl, input) {
 }
 function run(i) { const it = items[i]; close(); if (it) setTimeout(() => it.run(), 60); }
 
+const onEsc = (e) => { if (e.key === "Escape" && el) { e.preventDefault(); e.stopPropagation(); close(); } };
+
 export function close() {
   if (!el) return;
   el.remove(); el = null;
+  document.removeEventListener("keydown", onEsc, true);
   lockScroll(false);
   if (release) { release(); release = null; }
 }
@@ -84,7 +88,8 @@ export function open(o = {}) {
   const listEl = h("ul", { class: "palette__list", id: "pal-list", role: "listbox" });
   el = h("div", { class: "palette", role: "dialog", "aria-modal": "true", "aria-label": "Command palette", onclick: (e) => { if (e.target === el) close(); } },
     h("div", { class: "palette__box" },
-      h("div", { class: "palette__search" }, icon("search"), input, h("kbd", { text: "Esc" })),
+      h("div", { class: "palette__search" }, icon("search"), input,
+        h("button", { class: "palette__close", type: "button", "aria-label": "Close search", title: "Close (Esc)", onclick: () => close() }, h("kbd", { text: "Esc" }), icon("x"))),
       listEl,
       h("div", { class: "palette__foot" }, h("span", {}, h("kbd", { text: "↑↓" }), "navigate"), h("span", {}, h("kbd", { text: "Enter" }), "open"), h("span", {}, h("kbd", { text: "Ctrl K" }), "toggle")),
     ));
@@ -96,6 +101,7 @@ export function open(o = {}) {
     else if (e.key === "Escape") { e.preventDefault(); close(); }
   });
   document.body.append(el);
+  document.addEventListener("keydown", onEsc, true); // Esc closes from anywhere, not only the input
   lockScroll(true);
   release = trapFocus(el);
   draw(input, listEl);

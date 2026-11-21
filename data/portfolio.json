@@ -3,7 +3,7 @@
     "url": "https://bapanghosh.netlify.app",
     "name": "Bapan Ghosh",
     "title": "Bapan Ghosh — Full-Stack & Cross-Platform Developer",
-    "description": "Full-stack & cross-platform developer (B.Tech IT, Class of 2027). Co-creator of Rescuen, live on Google Play. {projects} projects across React, Next.js, Angular, Node, Go, React Native, Kotlin, Flutter, AWS & AI. Open to SDE internships and 2027 roles.",
+    "description": "Full-stack & cross-platform developer (B.Tech IT, Class of 2027). Co-creator of Rescuen, live on Google Play. {projects} projects across React, Next.js, Node.js, React Native, Kotlin, Java & AI. Open to full-time roles and internships.",
     "ogImage": "/assets/og/home.jpg",
     "ogImageAlt": "Bapan Ghosh — Full-Stack & Cross-Platform Developer. Live on Google Play, 2 internships, {projects} projects.",
     "locale": "en_IN",
@@ -30,7 +30,10 @@
       "Portfolio",
       "Internship",
       "B.Tech IT",
-      "BCET Durgapur"
+      "BCET Durgapur",
+      "Software Engineer",
+      "Fresher",
+      "Full-time"
     ]
   },
   "person": {
@@ -50,17 +53,17 @@
     "about": [
       "I'm a final-year B.Tech Information Technology student at Bengal College of Engineering and Technology, Durgapur (Class of 2027) — and a developer who loves shipping things end to end: the interface, the mobile client, the API, the database and the deployment.",
       "I co-built and launched Rescuen on the Google Play Store, where I owned the Android app — React Native with custom Kotlin native modules for lock-screen SOS. Since then I've built a verified campus network with WebRTC live video, an offline-capable UPI engine on Android StrongBox and Go, a Fire TV storytelling app on Amazon Bedrock, and AI products on Angular, React and Next.js.",
-      "Security, performance and accessibility matter to me as much as looks — rate limits, CSP, tests and Lighthouse scores are part of “done”. I'm looking for SDE and full-stack internships and 2027 new-grad roles where I can ship real features and learn from great engineers."
+      "Security, performance and accessibility matter to me as much as looks — rate limits, CSP, tests and Lighthouse scores are part of “done”. I'm open to full-time SDE and full-stack roles as well as internships, where I can ship real features and learn from great engineers."
     ],
     "location": "Bankura, West Bengal, India",
     "relocation": "Open to relocate anywhere in India (Bengaluru, Hyderabad, Pune, Gurugram/Noida, Chennai, Mumbai, Kolkata) or work remotely",
-    "availability": "Available now for internships (full-time or part-time, remote or on-site); graduating in June 2027 for full-time SDE roles",
+    "availability": "Available now for full-time roles and internships — remote or on-site, anywhere in India",
     "openTo": [
-      "SDE / Software Engineer intern",
-      "Full-Stack Developer (React, Next.js, Angular, Node.js)",
-      "Mobile Engineer (React Native, Kotlin, Flutter)",
-      "Backend / Cloud intern",
-      "2027 new-grad roles"
+      "Full-time Software Engineer / SDE",
+      "Full-Stack Developer (React, Next.js, Node.js)",
+      "Mobile Developer (React Native, Kotlin, Flutter)",
+      "Software engineering internships",
+      "Backend / Cloud roles"
     ],
     "languages": [
       "English",
@@ -146,22 +149,22 @@
     {
       "icon": "globe",
       "title": "Full-Stack Web",
-      "text": "React 19, Next.js and Angular on the front; Node, Fastify, Hono and Go behind typed, tested, secure APIs."
+      "text": "React, Next.js and Angular on the front; Node.js and Express behind secure REST APIs."
     },
     {
       "icon": "smartphone",
-      "title": "Mobile & TV",
-      "text": "React Native, Kotlin, Flutter and React Native for TV — from lock-screen SOS to 10-foot Fire TV experiences."
+      "title": "Mobile Apps",
+      "text": "React Native, Kotlin and Flutter — including an app live on the Google Play Store."
     },
     {
       "icon": "brain",
-      "title": "AI Products",
-      "text": "Gemini, Groq and Amazon Bedrock — grounded assistants, multi-agent pipelines and validated, safe outputs."
+      "title": "AI Features",
+      "text": "Gemini-powered assistants and agents, with safe, validated outputs."
     },
     {
       "icon": "cloud",
       "title": "Cloud & DevOps",
-      "text": "Docker, Kubernetes, GitHub Actions, AWS and serverless — shipped with CI/CD, CSP and rate limits."
+      "text": "Git, Docker and GitHub Actions — deployed on Netlify, Vercel and AWS."
     }
   ],
   "experience": [
@@ -223,13 +226,11 @@
       "title": "Languages",
       "icon": "code",
       "items": [
+        "JavaScript",
         "TypeScript",
-        "JavaScript (ES6+)",
-        "Python",
         "Java",
+        "Python",
         "Kotlin",
-        "Go",
-        "Dart",
         "C++",
         "SQL"
       ],
@@ -237,94 +238,56 @@
     },
     {
       "id": "frontend",
-      "title": "Frontend & Motion",
+      "title": "Frontend",
       "icon": "layout-grid",
       "items": [
-        "React 19",
-        "Next.js 15/16",
-        "Angular 19–22 (Signals)",
-        "Tailwind CSS v4",
-        "Three.js",
-        "GSAP ScrollTrigger",
-        "Framer Motion",
-        "Zustand",
-        "Vite",
-        "HTML5 Canvas",
-        "PWA"
+        "React",
+        "Next.js",
+        "Angular",
+        "Tailwind CSS",
+        "HTML & CSS"
       ],
       "usedIn": [
         "College Campus",
         "Vitrine",
         "Cachet",
-        "WEARSUPER",
-        "Wizard Chess 3D"
+        "WEARSUPER"
       ]
     },
     {
       "id": "backend",
-      "title": "Backend & Real-Time",
+      "title": "Backend & Databases",
       "icon": "server",
       "items": [
         "Node.js",
-        "Express 5",
-        "Fastify",
-        "Hono",
-        "Go (stdlib services)",
+        "Express",
         "REST APIs",
         "WebSockets",
-        "Socket.IO",
-        "WebRTC",
-        "Zod",
-        "Serverless Functions"
+        "MongoDB",
+        "PostgreSQL",
+        "Firebase"
       ],
       "usedIn": [
         "College Campus",
-        "Fortress UPI",
-        "Vitrine",
+        "WEARSUPER",
         "Cachet",
-        "M-Chat"
+        "Rescuen"
       ]
     },
     {
       "id": "mobile",
-      "title": "Mobile & TV",
+      "title": "Mobile",
       "icon": "smartphone",
       "items": [
         "React Native",
         "Kotlin",
         "Jetpack Compose",
-        "Flutter (Material 3)",
-        "Capacitor",
-        "React Native for TV",
-        "Android StrongBox / TEE",
-        "BLE & NFC"
+        "Flutter"
       ],
       "usedIn": [
         "Rescuen (Google Play)",
         "Fortress UPI",
-        "Storyloom (Fire TV)",
         "CutSlot"
-      ]
-    },
-    {
-      "id": "data",
-      "title": "Databases & Storage",
-      "icon": "database",
-      "items": [
-        "PostgreSQL",
-        "MongoDB (Mongoose)",
-        "SQLite",
-        "Firebase / Firestore",
-        "Redis",
-        "DynamoDB",
-        "Drizzle ORM",
-        "AWS S3"
-      ],
-      "usedIn": [
-        "Cachet",
-        "WEARSUPER",
-        "Rescuen",
-        "College Campus"
       ]
     },
     {
@@ -332,20 +295,16 @@
       "title": "Cloud & DevOps",
       "icon": "cloud",
       "items": [
+        "Git & GitHub",
+        "GitHub Actions",
         "Docker",
-        "Kubernetes",
-        "GitHub Actions CI/CD",
-        "Nginx",
-        "AWS (Lambda, API Gateway, CloudFront, CDK)",
-        "Netlify",
-        "Vercel",
-        "Render",
-        "Linux"
+        "Kubernetes (basics)",
+        "AWS (S3, EC2)",
+        "Netlify / Vercel"
       ],
       "usedIn": [
-        "Fortress UPI",
-        "Storyloom",
         "College Campus",
+        "Fortress UPI",
         "Vitrine"
       ]
     },
@@ -354,64 +313,29 @@
       "title": "AI / ML",
       "icon": "brain",
       "items": [
-        "Google Gemini API",
-        "Groq & multi-provider LLM routing",
-        "Amazon Bedrock AgentCore",
-        "Strands Agents",
-        "Amazon Nova",
+        "Gemini API",
+        "AI agents",
         "Prompt engineering",
-        "RAG / BM25 retrieval",
-        "TensorFlow / Keras",
-        "OpenCV",
-        "Streamlit"
+        "Python ML (TensorFlow, OpenCV)"
       ],
       "usedIn": [
-        "Storyloom",
-        "M-Chat",
-        "Vitrine",
         "Rescuen",
-        "ColorCraft"
-      ]
-    },
-    {
-      "id": "security",
-      "title": "Security & Quality",
-      "icon": "shield-check",
-      "items": [
-        "JWT / OAuth 2.0",
-        "WebAuthn passkeys",
-        "TOTP two-factor auth",
-        "bcrypt / scrypt",
-        "CSP & security headers",
-        "Rate limiting",
-        "Vitest",
-        "Playwright",
-        "Jest",
-        "Supertest",
-        "axe-core (WCAG)",
-        "Lighthouse"
-      ],
-      "usedIn": [
-        "Cachet",
-        "Vitrine",
-        "WEARSUPER",
-        "GhoshKart"
+        "M-Chat",
+        "ColorCraft",
+        "Storyloom"
       ]
     },
     {
       "id": "core",
-      "title": "Core CS & Ways of Working",
+      "title": "Core CS",
       "icon": "cpu",
+      "wide": true,
       "items": [
         "Data Structures & Algorithms",
         "OOP",
         "DBMS",
         "Operating Systems",
-        "Computer Networks",
-        "System design basics",
-        "Problem solving",
-        "Team collaboration",
-        "Communication"
+        "Computer Networks"
       ]
     }
   ],
@@ -423,27 +347,19 @@
     "javascript",
     "nodedotjs",
     "express",
-    "fastify",
-    "go",
-    "python",
     "openjdk",
+    "python",
     "kotlin",
     "flutter",
-    "android",
     "mongodb",
     "postgresql",
-    "redis",
     "firebase",
     "docker",
     "kubernetes",
     "githubactions",
     "tailwindcss",
-    "threedotjs",
     "googlegemini",
-    "nginx",
-    "linux",
-    "vercel",
-    "netlify"
+    "git"
   ],
   "projects": [
     {
@@ -2047,7 +1963,7 @@
         "kab se",
         "when can"
       ],
-      "a": "Right away for internships — full-time or part-time, remote or on-site. He graduates in June 2027 and is available for full-time SDE roles from then."
+      "a": "Right away — for full-time roles or internships, remote or on-site. He graduates in June 2027 and is ready to join a team now."
     },
     {
       "q": "Is he open to relocation?",
@@ -2086,14 +2002,18 @@
     {
       "q": "What roles is he looking for?",
       "keys": [
+        "full time",
+        "full-time",
+        "job",
+        "job type",
+        "jobs",
+        "looking for",
+        "position",
         "role",
         "roles",
-        "position",
-        "looking for",
-        "job type",
         "what kind"
       ],
-      "a": "SDE / software-engineering internships, full-stack roles (React, Next.js, Angular, Node.js), mobile roles (React Native, Kotlin, Flutter), backend/cloud internships and 2027 new-grad positions."
+      "a": "Full-time Software Engineer / SDE roles, full-stack (React, Next.js, Node.js), mobile (React Native, Kotlin, Flutter) and backend/cloud roles — and he's equally happy to start with an internship."
     },
     {
       "q": "Does he know DSA?",
@@ -2156,7 +2076,7 @@
       "Why should I hire Bapan?",
       "Show me his best projects",
       "What's his tech stack?",
-      "Is he available for internships?",
+      "Is he available to join?",
       "What's new with Bapan?"
     ]
   },

@@ -14,7 +14,7 @@ function hero(d) {
 <section class="hero" id="home" aria-labelledby="hero-title">
   <div class="container hero__grid">
     <div class="hero__copy">
-      <p class="hero__badge" data-hero="1"><span class="pulse-dot"></span>Open to SDE internships &amp; 2027 roles</p>
+      <p class="hero__badge" data-hero="1"><span class="pulse-dot"></span>Open to full-time roles &amp; internships</p>
       <p class="eyebrow hero__eyebrow" data-hero="2">${esc(p.eyebrow)}</p>
       <h1 class="hero__name" id="hero-title">
         <span class="line"><span data-hero="3">Bapan</span></span>
@@ -232,9 +232,9 @@ function skills(d) {
   return `
 <section class="section skills" id="skills" aria-labelledby="skills-title">
   <div class="container">
-    ${sectionHead("05", "Skills", `<span id="skills-title">${splitWords("Skills &")} <em class="gold-text">${splitWords("tech stack")}</em></span>`, "Grouped the way engineering teams think — every tool here is used in a project you can open.")}
+    ${sectionHead("05", "Skills", `<span id="skills-title">${splitWords("Skills &")} <em class="gold-text">${splitWords("tech stack")}</em></span>`, "The tools I use every day — each one backed by a project you can open.")}
     <div class="skills__grid">
-      ${d.skills.map((s) => `<article class="skill card" data-reveal data-spot>
+      ${d.skills.map((s) => `<article class="skill card${s.wide ? " skill--wide" : ""}" data-reveal data-spot>
         <header><span class="skill__icon">${icon(s.icon)}</span><h3>${esc(s.title)}</h3></header>
         <ul class="chips chips--lg">${s.items.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
         ${s.usedIn ? `<p class="skill__used">${icon("layers")} <span>Used in ${esc(s.usedIn.join(", "))}</span></p>` : ""}
@@ -297,7 +297,7 @@ function contact(d) {
   return `
 <section class="section contact" id="contact" aria-labelledby="contact-title">
   <div class="container">
-    ${sectionHead("07", "Contact", `<span id="contact-title">${splitWords("Get in")} <em class="gold-text">${splitWords("touch")}</em></span>`, `Hiring for an internship or a 2027 role, or have a project in mind? I reply ${esc(c.responseTime)} — and you'll get an instant confirmation in your inbox.`)}
+    ${sectionHead("07", "Contact", `<span id="contact-title">${splitWords("Get in")} <em class="gold-text">${splitWords("touch")}</em></span>`, `Hiring for a full-time role or an internship, or have a project in mind? I reply ${esc(c.responseTime)} — and you'll get an instant confirmation in your inbox.`)}
     <div class="contact__grid">
       <div class="contact__info" data-reveal>
         <ul class="channels">
@@ -326,7 +326,7 @@ function contact(d) {
         <div class="form-row">
           <label class="field"><span>Phone <em>(optional)</em></span><input name="phone" type="tel" autocomplete="tel" maxlength="20" placeholder="+91 …"></label>
           <label class="field"><span>Topic</span><select name="topic">
-            <option>Internship opportunity</option><option>Full-time role (2027)</option><option>Freelance / project</option><option>Collaboration</option><option>Just saying hello</option>
+            <option>Full-time role</option><option>Internship</option><option>Freelance / project</option><option>Collaboration</option><option>Just saying hello</option>
           </select></label>
         </div>
         <label class="field"><span>Message</span><textarea name="message" required minlength="10" maxlength="3000" rows="5" placeholder="Tell me about the role, the team or the idea…"></textarea></label>
