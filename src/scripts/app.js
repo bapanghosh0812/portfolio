@@ -10,30 +10,81 @@ const FINE = matchMedia("(hover: hover) and (pointer: fine)").matches;
 const loadedAt = Date.now();
 
 /* ---------------------------------------------------------------- theme */
+// Three modes: System (default — follows the device live), Light (ivory) and Dark (noir).
+const THEME_NAMES = { system: "System", ivory: "Light", noir: "Dark" };
 function initTheme() {
   const meta = $('meta[name="theme-color"]');
+  const sys = matchMedia("(prefers-color-scheme: light)");
+  const resolve = (m) => (m === "system" ? (sys.matches ? "ivory" : "noir") : m);
+  let mode = store.get("bg-theme");
+  if (mode !== "ivory" && mode !== "noir") mode = "system";
+
   const sync = () => {
+    root.dataset.themeMode = mode;
     const ivory = root.dataset.theme === "ivory";
-    $$("[data-theme-toggle]").forEach((b) => b.setAttribute("aria-label", ivory ? "Switch to dark theme" : "Switch to light theme"));
     if (meta) meta.setAttribute("content", ivory ? "#F6F1E6" : "#0A0A0B");
+    const now = ivory ? "Light" : "Dark";
+    $$("[data-theme-toggle]").forEach((b) => b.setAttribute("aria-label", `Theme: ${THEME_NAMES[mode]}${mode === "system" ? ` (${now.toLowerCase()} on this device)` : ""}. Change theme`));
+    $$("[data-theme-set]").forEach((b) => b.setAttribute("aria-checked", String(b.dataset.themeSet === mode)));
+    $$("[data-theme-now]").forEach((el) => { el.textContent = `Match your device · ${now}`; });
   };
-  sync();
-  const swap = (next, e, save) => {
-    if (root.dataset.theme === next) return;
-    const apply = () => { root.dataset.theme = next; if (save) store.set("bg-theme", next); sync(); };
+  const paint = (next, e) => {
+    if (root.dataset.theme === next) return sync();
+    const apply = () => { root.dataset.theme = next; sync(); };
     if (document.startViewTransition && !REDUCE && e) {
       root.style.setProperty("--vt-x", `${e.clientX || innerWidth - 60}px`);
       root.style.setProperty("--vt-y", `${e.clientY || 30}px`);
       document.startViewTransition(apply);
     } else apply();
   };
-  // manual switch (remembered)
-  $$("[data-theme-toggle]").forEach((btn) => btn.addEventListener("click", (e) => swap(root.dataset.theme === "ivory" ? "noir" : "ivory", e, true)));
-  // system default: follow the device live until the visitor picks a theme manually
-  const sys = matchMedia("(prefers-color-scheme: light)");
-  sys.addEventListener("change", (m) => { if (!store.get("bg-theme")) swap(m.matches ? "ivory" : "noir", null, false); });
-  // palette action "follow system theme" clears the manual choice
-  document.addEventListener("theme:system", () => { try { localStorage.removeItem("bg-theme"); } catch {} swap(sys.matches ? "ivory" : "noir", null, false); toast("Theme now follows your device"); });
+  const setMode = (m, e) => {
+    if (!THEME_NAMES[m]) return;
+    mode = m;
+    if (m === "system") { try { localStorage.removeItem("bg-theme"); } catch {} } else store.set("bg-theme", m);
+    paint(resolve(m), e);
+  };
+  sync();
+  // System mode follows the device live (e.g. phone switching to dark at night)
+  sys.addEventListener("change", () => { if (mode === "system") paint(resolve("system")); else sync(); });
+  // the command palette sets a mode too
+  document.addEventListener("theme:set", (e) => setMode(e.detail, null));
+
+  // the picker: a small menu under the theme button
+  const pick = $("[data-theme-pick]");
+  if (!pick) return;
+  const btn = $("[data-theme-toggle]", pick), menu = $(".theme-menu", pick), items = $$("[data-theme-set]", menu);
+  const focusAt = (i) => items[(i + items.length) % items.length].focus();
+  const onKey = (e) => {
+    const i = items.indexOf(document.activeElement);
+    if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); close(true); }
+    else if (e.key === "ArrowDown") { e.preventDefault(); focusAt(i + 1); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); focusAt(i < 0 ? -1 : i - 1); }
+    else if (e.key === "Home") { e.preventDefault(); focusAt(0); }
+    else if (e.key === "End") { e.preventDefault(); focusAt(-1); }
+    else if (e.key === "Tab") close(false);
+  };
+  const outside = (e) => { if (!pick.contains(e.target)) close(false); };
+  function open(withKeys) {
+    menu.hidden = false;
+    btn.setAttribute("aria-expanded", "true");
+    pick.classList.add("is-open");
+    document.addEventListener("keydown", onKey, true);
+    document.addEventListener("pointerdown", outside, true);
+    if (withKeys) focusAt(Math.max(0, items.findIndex((x) => x.dataset.themeSet === mode)));
+  }
+  function close(refocus) {
+    if (menu.hidden) return;
+    menu.hidden = true;
+    btn.setAttribute("aria-expanded", "false");
+    pick.classList.remove("is-open");
+    document.removeEventListener("keydown", onKey, true);
+    document.removeEventListener("pointerdown", outside, true);
+    if (refocus) btn.focus();
+  }
+  btn.addEventListener("click", (e) => (menu.hidden ? open(e.detail === 0) : close(false)));
+  btn.addEventListener("keydown", (e) => { if (e.key === "ArrowDown" && menu.hidden) { e.preventDefault(); open(true); } });
+  items.forEach((it) => it.addEventListener("click", (e) => { const kb = e.detail === 0; setMode(it.dataset.themeSet, e); close(kb); }));
+  addEventListener("resize", () => close(false), { passive: true });
 }
 
 /* ------------------------------------------------- header + scroll fx */

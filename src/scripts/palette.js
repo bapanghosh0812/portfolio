@@ -29,9 +29,10 @@ function collect() {
     { g: "Actions", label: "Download résumé (PDF)", icon: "download", run: () => window.open("/Bapan_Ghosh_Resume.pdf", "_blank", "noopener") },
     { g: "Actions", label: "Copy email address", icon: "copy", run: async () => { const v = dec(mail ? mail.dataset.mail : ""); try { await navigator.clipboard.writeText(v); toast("Email address copied"); } catch { toast(v); } } },
     { g: "Actions", label: "Chat on WhatsApp", icon: "message-circle", run: () => window.open("/whatsapp", "_blank", "noopener") },
-    { g: "Actions", label: "Switch light / dark theme", icon: "sun", run: () => { const b = $("[data-theme-toggle]"); if (b) b.click(); } },
-    { g: "Actions", label: "Theme: follow my device (system)", icon: "monitor-smartphone", run: () => document.dispatchEvent(new Event("theme:system")) },
     { g: "Actions", label: "Report an issue", icon: "bug", run: () => opts.openBot && opts.openBot({ view: "report" }) },
+    // theme: the current mode is marked, so it's always clear which one is on
+    ...[["system", "monitor-smartphone", "System — match my device"], ["ivory", "sun", "Light"], ["noir", "moon", "Dark"]].map(([id, ic, label]) => (
+      { g: "Theme", label: `Theme: ${label}`, icon: ic, hint: document.documentElement.dataset.themeMode === id ? "✓ Current" : "", run: () => document.dispatchEvent(new CustomEvent("theme:set", { detail: id })) })),
     { g: "Profiles", label: "GitHub", icon: "code", run: () => window.open("/github", "_blank", "noopener") },
     { g: "Profiles", label: "LinkedIn", icon: "user", run: () => window.open("/linkedin", "_blank", "noopener") },
     { g: "Profiles", label: "LeetCode", icon: "terminal", run: () => window.open("/leetcode", "_blank", "noopener") },

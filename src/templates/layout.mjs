@@ -10,8 +10,21 @@ const NAV = [
   ["contact", "Contact"],
 ];
 
-// Theme: a manual choice (saved) wins; otherwise follow the device's light/dark setting.
-export const THEME_INIT = `(function(){var d=document.documentElement,t=null;d.classList.add("js");try{t=localStorage.getItem("bg-theme")}catch(e){}if(t!=="ivory"&&t!=="noir")t=matchMedia("(prefers-color-scheme: light)").matches?"ivory":"noir";d.setAttribute("data-theme",t)})();`;
+// Theme: "system" (default) follows the device's light/dark setting; a saved Light/Dark choice wins.
+export const THEME_INIT = `(function(){var d=document.documentElement,t=null;d.classList.add("js");try{t=localStorage.getItem("bg-theme")}catch(e){}var m=t==="ivory"||t==="noir"?t:"system";if(m==="system")t=matchMedia("(prefers-color-scheme: light)").matches?"ivory":"noir";d.setAttribute("data-theme",t);d.setAttribute("data-theme-mode",m)})();`;
+
+const THEMES = [
+  ["system", "monitor-smartphone", "System", "Match your device"],
+  ["ivory", "sun", "Light", "Ivory &amp; gold"],
+  ["noir", "moon", "Dark", "Noir &amp; gold"],
+];
+const themePicker = () => `<div class="theme-pick" data-theme-pick>
+        <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-haspopup="menu" aria-expanded="false" aria-controls="theme-menu" aria-label="Theme">${icon("monitor-smartphone", "theme-ic theme-ic--system")}${icon("sun", "theme-ic theme-ic--ivory")}${icon("moon", "theme-ic theme-ic--noir")}</button>
+        <div class="theme-menu" id="theme-menu" role="menu" aria-label="Theme" hidden>
+          <p class="theme-menu__title" aria-hidden="true">Appearance</p>
+          ${THEMES.map(([id, ic, name, note]) => `<button type="button" role="menuitemradio" aria-checked="${id === "system"}" data-theme-set="${id}" tabindex="-1">${icon(ic)}<span><b>${name}</b><small${id === "system" ? " data-theme-now" : ""}>${note}</small></span>${icon("check", "theme-menu__tick")}</button>`).join("\n          ")}
+        </div>
+      </div>`;
 
 export const SPECULATION = JSON.stringify({ prefetch: [{ where: { href_matches: "/work/*" }, eagerness: "moderate" }] });
 
@@ -19,7 +32,7 @@ function head({ site, title, description, canonical, ogImage, ogAlt, ogType = "w
   const A = assets();
   const og = site.url + ogImage;
   return `<!doctype html>
-<html lang="en-IN" data-theme="noir">
+<html lang="en-IN" data-theme="noir" data-theme-mode="system">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -82,7 +95,7 @@ function header({ home }) {
     </nav>
     <div class="nav__actions">
       <button class="icon-btn nav__palette" type="button" data-palette-open aria-label="Search and quick actions (Ctrl K)">${icon("command")}<kbd>K</kbd></button>
-      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch theme">${icon("sun", "theme-sun")}${icon("moon", "theme-moon")}</button>
+      ${themePicker()}
       <a class="btn btn--gold btn--sm nav__cta" href="${pre}#contact" data-magnetic>Hire me</a>
       <button class="burger" type="button" data-menu-open aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
     </div>
