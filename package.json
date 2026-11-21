@@ -1,0 +1,17 @@
+{
+  "name": "bapanghosh-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bapan Ghosh — portfolio website, Mini Bapan assistant and contact API",
+  "author": "Bapan Ghosh",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && node scripts/dev.mjs"
+  },
+  "dependencies": {
+    "nodemailer": "10.3.1"
+  }
+}

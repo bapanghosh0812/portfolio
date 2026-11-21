@@ -1,0 +1,15 @@
+# dependencies & build output
+node_modules/
+dist/
+.netlify/
+
+# secrets — API keys and the Gmail app password live ONLY in Netlify environment variables
+.env
+.env.*
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

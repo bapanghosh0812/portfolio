@@ -1,0 +1,2173 @@
+{
+  "site": {
+    "url": "https://bapanghosh.netlify.app",
+    "name": "Bapan Ghosh",
+    "title": "Bapan Ghosh — Full-Stack & Cross-Platform Developer",
+    "description": "Full-stack & cross-platform developer (B.Tech IT, Class of 2027). Co-creator of Rescuen, live on Google Play. {projects} projects across React, Next.js, Angular, Node, Go, React Native, Kotlin, Flutter, AWS & AI. Open to SDE internships and 2027 roles.",
+    "ogImage": "/assets/og/home.jpg",
+    "ogImageAlt": "Bapan Ghosh — Full-Stack & Cross-Platform Developer. Live on Google Play, 2 internships, {projects} projects.",
+    "locale": "en_IN",
+    "themeColor": "#0A0A0B",
+    "keywords": [
+      "Bapan Ghosh",
+      "Full-Stack Developer",
+      "Cross-Platform Developer",
+      "React",
+      "Next.js",
+      "Angular",
+      "Node.js",
+      "React Native",
+      "Kotlin",
+      "Flutter",
+      "Go",
+      "Java",
+      "DevOps",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "AI",
+      "Rescuen",
+      "Portfolio",
+      "Internship",
+      "B.Tech IT",
+      "BCET Durgapur"
+    ]
+  },
+  "person": {
+    "name": "Bapan Ghosh",
+    "shortName": "Bapan",
+    "headline": "Full-Stack & Cross-Platform Developer",
+    "subheadline": "DevOps & AI Enthusiast",
+    "eyebrow": "B.Tech IT · BCET Durgapur · Class of 2027",
+    "roles": [
+      "Full-Stack Developer",
+      "Cross-Platform App Developer",
+      "Android & Flutter Developer",
+      "AI Product Engineer",
+      "DevOps Enthusiast"
+    ],
+    "intro": "I build complete products — refined interfaces, Android and TV apps, secure real-time APIs and cloud deployments. Co-creator of Rescuen, a personal-safety app live on Google Play.",
+    "about": [
+      "I'm a final-year B.Tech Information Technology student at Bengal College of Engineering and Technology, Durgapur (Class of 2027) — and a developer who loves shipping things end to end: the interface, the mobile client, the API, the database and the deployment.",
+      "I co-built and launched Rescuen on the Google Play Store, where I owned the Android app — React Native with custom Kotlin native modules for lock-screen SOS. Since then I've built a verified campus network with WebRTC live video, an offline-capable UPI engine on Android StrongBox and Go, a Fire TV storytelling app on Amazon Bedrock, and AI products on Angular, React and Next.js.",
+      "Security, performance and accessibility matter to me as much as looks — rate limits, CSP, tests and Lighthouse scores are part of “done”. I'm looking for SDE and full-stack internships and 2027 new-grad roles where I can ship real features and learn from great engineers."
+    ],
+    "location": "Bankura, West Bengal, India",
+    "relocation": "Open to relocate anywhere in India (Bengaluru, Hyderabad, Pune, Gurugram/Noida, Chennai, Mumbai, Kolkata) or work remotely",
+    "availability": "Available now for internships (full-time or part-time, remote or on-site); graduating in June 2027 for full-time SDE roles",
+    "openTo": [
+      "SDE / Software Engineer intern",
+      "Full-Stack Developer (React, Next.js, Angular, Node.js)",
+      "Mobile Engineer (React Native, Kotlin, Flutter)",
+      "Backend / Cloud intern",
+      "2027 new-grad roles"
+    ],
+    "languages": [
+      "English",
+      "Hindi",
+      "Bengali"
+    ],
+    "education": {
+      "degree": "B.Tech in Information Technology",
+      "school": "Bengal College of Engineering and Technology (BCET), Durgapur",
+      "university": "MAKAUT, West Bengal",
+      "period": "Aug 2023 – Jun 2027"
+    },
+    "contact": {
+      "email": "bapanghosh081204@gmail.com",
+      "phones": [
+        "+91 98832 90273",
+        "+91 75015 29371"
+      ],
+      "whatsapp": "919883290273",
+      "address": "Kumidya, Bankura, West Bengal – 722146",
+      "mapsUrl": "https://maps.app.goo.gl/sWcP4sQ3jsQwpuXP7",
+      "responseTime": "usually within 24 hours"
+    },
+    "socials": [
+      {
+        "id": "github",
+        "label": "GitHub",
+        "handle": "bapanghosh0812",
+        "url": "https://github.com/bapanghosh0812"
+      },
+      {
+        "id": "linkedin",
+        "label": "LinkedIn",
+        "handle": "bapan-ghosh",
+        "url": "https://www.linkedin.com/in/bapan-ghosh-5676803a2"
+      },
+      {
+        "id": "leetcode",
+        "label": "LeetCode",
+        "handle": "BAPAN_GHOSH_07",
+        "url": "https://leetcode.com/u/BAPAN_GHOSH_07/"
+      },
+      {
+        "id": "googleplay",
+        "label": "Google Play",
+        "handle": "Rescuen",
+        "url": "https://play.google.com/store/apps/details?id=com.officialrescuen.app"
+      }
+    ],
+    "resume": "/Bapan_Ghosh_Resume.pdf",
+    "portrait": "/assets/img/portrait",
+    "portraitAlt": "Bapan Ghosh in an all-white outfit, seated in a rattan egg chair on a rooftop",
+    "lifestyle": "/assets/img/lifestyle",
+    "lifestyleAlt": "Bapan Ghosh seated on a white concept sports car on a reflective floor"
+  },
+  "stats": [
+    {
+      "value": 19,
+      "suffix": "",
+      "label": "Projects built",
+      "key": "projects"
+    },
+    {
+      "value": 15,
+      "suffix": "",
+      "label": "Live products & demos",
+      "key": "live"
+    },
+    {
+      "value": 2,
+      "suffix": "",
+      "label": "Industry internships",
+      "key": "internships"
+    },
+    {
+      "value": 17,
+      "suffix": "",
+      "label": "Certificates & credentials",
+      "key": "certificates"
+    }
+  ],
+  "pillars": [
+    {
+      "icon": "globe",
+      "title": "Full-Stack Web",
+      "text": "React 19, Next.js and Angular on the front; Node, Fastify, Hono and Go behind typed, tested, secure APIs."
+    },
+    {
+      "icon": "smartphone",
+      "title": "Mobile & TV",
+      "text": "React Native, Kotlin, Flutter and React Native for TV — from lock-screen SOS to 10-foot Fire TV experiences."
+    },
+    {
+      "icon": "brain",
+      "title": "AI Products",
+      "text": "Gemini, Groq and Amazon Bedrock — grounded assistants, multi-agent pipelines and validated, safe outputs."
+    },
+    {
+      "icon": "cloud",
+      "title": "Cloud & DevOps",
+      "text": "Docker, Kubernetes, GitHub Actions, AWS and serverless — shipped with CI/CD, CSP and rate limits."
+    }
+  ],
+  "experience": [
+    {
+      "period": "Jul 2026 – Oct 2026",
+      "type": "training",
+      "title": "Java Full Stack — TalentNext",
+      "org": "Wipro · Digital Skills Readiness Program",
+      "text": "Completed Wipro's TalentNext course on Java Full Stack, strengthening Core Java and object-oriented design.",
+      "ref": "TNext-SE-2026-J_260300163"
+    },
+    {
+      "period": "Aug 2026 – Sep 2026",
+      "type": "internship",
+      "title": "Web Development Intern",
+      "org": "Cognifyz IT Solutions Pvt. Ltd.",
+      "text": "Completed all three task levels — responsive layouts with Bootstrap and Bulma, JavaScript apps (a scientific calculator with a hand-written expression engine and a colour studio), a gallery and a landing page. Commended for dedication, coordination, communication and attention to detail.",
+      "ref": "CTI/A1/C410735"
+    },
+    {
+      "period": "Sep 2026 – Nov 2026",
+      "type": "build",
+      "title": "Built seven new products",
+      "org": "Fortress UPI · Storyloom · Vitrine · Cachet · Fresnel · M-Chat · Wizard Chess 3D",
+      "text": "From hardware-attested offline payments and a Fire TV multi-agent story engine to an Angular 22 AI product studio — each one tested, secured and documented."
+    },
+    {
+      "period": "2026",
+      "type": "launch",
+      "title": "Co-creator & Android lead — Rescuen",
+      "org": "Live on Google Play",
+      "text": "Built and shipped the production Android app as a two-person team: Kotlin native lock-screen triggers, a 1 km geohash community radar, background GPS and a Gemini safety assistant."
+    },
+    {
+      "period": "Aug 2025 – Nov 2025",
+      "type": "internship",
+      "title": "AI / ML Intern",
+      "org": "EDU TANTR",
+      "text": "Built, trained and evaluated machine-learning models in Python during a four-month structured internship, with applied mini-projects on core ML concepts."
+    },
+    {
+      "period": "Dec 2024 – Oct 2025",
+      "type": "certification",
+      "title": "Certified across Oracle, IBM, Microsoft & Google",
+      "org": "OCI Generative AI Professional · IBM AI Fundamentals · Azure AZ-900 · Kaggle × Google AI Agents",
+      "text": "Industry credentials in generative AI, agents, cloud and Python that underpin the AI products I build."
+    },
+    {
+      "period": "Aug 2023 – Jun 2027",
+      "type": "education",
+      "title": "B.Tech in Information Technology",
+      "org": "BCET Durgapur · MAKAUT",
+      "text": "Final-year undergraduate focused on software engineering, DSA, OOP, DBMS, Operating Systems and Computer Networks."
+    }
+  ],
+  "skills": [
+    {
+      "id": "languages",
+      "title": "Languages",
+      "icon": "code",
+      "items": [
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "Python",
+        "Java",
+        "Kotlin",
+        "Go",
+        "Dart",
+        "C++",
+        "SQL"
+      ],
+      "note": "Core Java & OOP certified through Wipro TalentNext."
+    },
+    {
+      "id": "frontend",
+      "title": "Frontend & Motion",
+      "icon": "layout-grid",
+      "items": [
+        "React 19",
+        "Next.js 15/16",
+        "Angular 19–22 (Signals)",
+        "Tailwind CSS v4",
+        "Three.js",
+        "GSAP ScrollTrigger",
+        "Framer Motion",
+        "Zustand",
+        "Vite",
+        "HTML5 Canvas",
+        "PWA"
+      ],
+      "usedIn": [
+        "College Campus",
+        "Vitrine",
+        "Cachet",
+        "WEARSUPER",
+        "Wizard Chess 3D"
+      ]
+    },
+    {
+      "id": "backend",
+      "title": "Backend & Real-Time",
+      "icon": "server",
+      "items": [
+        "Node.js",
+        "Express 5",
+        "Fastify",
+        "Hono",
+        "Go (stdlib services)",
+        "REST APIs",
+        "WebSockets",
+        "Socket.IO",
+        "WebRTC",
+        "Zod",
+        "Serverless Functions"
+      ],
+      "usedIn": [
+        "College Campus",
+        "Fortress UPI",
+        "Vitrine",
+        "Cachet",
+        "M-Chat"
+      ]
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile & TV",
+      "icon": "smartphone",
+      "items": [
+        "React Native",
+        "Kotlin",
+        "Jetpack Compose",
+        "Flutter (Material 3)",
+        "Capacitor",
+        "React Native for TV",
+        "Android StrongBox / TEE",
+        "BLE & NFC"
+      ],
+      "usedIn": [
+        "Rescuen (Google Play)",
+        "Fortress UPI",
+        "Storyloom (Fire TV)",
+        "CutSlot"
+      ]
+    },
+    {
+      "id": "data",
+      "title": "Databases & Storage",
+      "icon": "database",
+      "items": [
+        "PostgreSQL",
+        "MongoDB (Mongoose)",
+        "SQLite",
+        "Firebase / Firestore",
+        "Redis",
+        "DynamoDB",
+        "Drizzle ORM",
+        "AWS S3"
+      ],
+      "usedIn": [
+        "Cachet",
+        "WEARSUPER",
+        "Rescuen",
+        "College Campus"
+      ]
+    },
+    {
+      "id": "cloud",
+      "title": "Cloud & DevOps",
+      "icon": "cloud",
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "GitHub Actions CI/CD",
+        "Nginx",
+        "AWS (Lambda, API Gateway, CloudFront, CDK)",
+        "Netlify",
+        "Vercel",
+        "Render",
+        "Linux"
+      ],
+      "usedIn": [
+        "Fortress UPI",
+        "Storyloom",
+        "College Campus",
+        "Vitrine"
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI / ML",
+      "icon": "brain",
+      "items": [
+        "Google Gemini API",
+        "Groq & multi-provider LLM routing",
+        "Amazon Bedrock AgentCore",
+        "Strands Agents",
+        "Amazon Nova",
+        "Prompt engineering",
+        "RAG / BM25 retrieval",
+        "TensorFlow / Keras",
+        "OpenCV",
+        "Streamlit"
+      ],
+      "usedIn": [
+        "Storyloom",
+        "M-Chat",
+        "Vitrine",
+        "Rescuen",
+        "ColorCraft"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security & Quality",
+      "icon": "shield-check",
+      "items": [
+        "JWT / OAuth 2.0",
+        "WebAuthn passkeys",
+        "TOTP two-factor auth",
+        "bcrypt / scrypt",
+        "CSP & security headers",
+        "Rate limiting",
+        "Vitest",
+        "Playwright",
+        "Jest",
+        "Supertest",
+        "axe-core (WCAG)",
+        "Lighthouse"
+      ],
+      "usedIn": [
+        "Cachet",
+        "Vitrine",
+        "WEARSUPER",
+        "GhoshKart"
+      ]
+    },
+    {
+      "id": "core",
+      "title": "Core CS & Ways of Working",
+      "icon": "cpu",
+      "items": [
+        "Data Structures & Algorithms",
+        "OOP",
+        "DBMS",
+        "Operating Systems",
+        "Computer Networks",
+        "System design basics",
+        "Problem solving",
+        "Team collaboration",
+        "Communication"
+      ]
+    }
+  ],
+  "coreStack": [
+    "react",
+    "nextdotjs",
+    "angular",
+    "typescript",
+    "javascript",
+    "nodedotjs",
+    "express",
+    "fastify",
+    "go",
+    "python",
+    "openjdk",
+    "kotlin",
+    "flutter",
+    "android",
+    "mongodb",
+    "postgresql",
+    "redis",
+    "firebase",
+    "docker",
+    "kubernetes",
+    "githubactions",
+    "tailwindcss",
+    "threedotjs",
+    "googlegemini",
+    "nginx",
+    "linux",
+    "vercel",
+    "netlify"
+  ],
+  "projects": [
+    {
+      "slug": "rescuen",
+      "name": "Rescuen",
+      "tagline": "Personal safety, one tap away.",
+      "kind": "Android app · Team of two",
+      "category": [
+        "mobile",
+        "ai"
+      ],
+      "tier": "featured",
+      "year": "2026",
+      "status": "Live on Google Play",
+      "role": "Co-creator & Android lead — I built the Android app; my teammate owned the backend and cloud.",
+      "summary": "A community-powered emergency app: one hold of the SOS button alerts family, the police and every Rescuen user within 1 km — while recording evidence, even with the screen locked.",
+      "metrics": [
+        {
+          "value": "1-tap",
+          "label": "SOS alerts"
+        },
+        {
+          "value": "1 km",
+          "label": "community radar"
+        },
+        {
+          "value": "6",
+          "label": "Indian languages"
+        }
+      ],
+      "highlights": [
+        "One-tap (hold) SOS — SMS to family and emergency services (112), plus instant FCM alerts to nearby Rescuen users.",
+        "1 km community radar built on geohash proximity queries.",
+        "Live location through an Android foreground service, so SOS keeps running with the screen off.",
+        "Follow-Me safe-journey mode — a dead-man's switch asks “Are you safe?” on unexpected stops and escalates to SOS.",
+        "PIN-locked Evidence Vault recording front and rear camera video with audio to owner-only cloud storage.",
+        "Gemini-powered safety assistant with function calling to guide users and trigger SOS.",
+        "Custom Kotlin native module for triple volume-key SOS and lock-screen wake, bridged into React Native.",
+        "Google Sign-In and phone-OTP onboarding, with the UI in six Indian languages."
+      ],
+      "architecture": {
+        "flow": [
+          {
+            "t": "React Native app",
+            "s": "+ Kotlin native layer",
+            "i": "smartphone"
+          },
+          {
+            "t": "Location service",
+            "s": "foreground · wake lock",
+            "i": "navigation"
+          },
+          {
+            "t": "Firebase Cloud",
+            "s": "Auth · Firestore · Functions · Storage",
+            "i": "cloud"
+          },
+          [
+            {
+              "t": "FCM",
+              "s": "SOS push",
+              "i": "radio"
+            },
+            {
+              "t": "Geohash radar",
+              "s": "users within 1 km",
+              "i": "map-pin"
+            },
+            {
+              "t": "SMS + 112",
+              "s": "family & police",
+              "i": "phone"
+            },
+            {
+              "t": "Gemini",
+              "s": "safety assistant",
+              "i": "bot"
+            }
+          ]
+        ]
+      },
+      "stack": [
+        "React Native",
+        "TypeScript",
+        "Kotlin",
+        "Firebase Auth",
+        "Cloud Firestore",
+        "Cloud Functions",
+        "Cloud Messaging (FCM)",
+        "Cloud Storage",
+        "App Check",
+        "Google Gemini API",
+        "Google Maps",
+        "Geohash",
+        "VisionCamera",
+        "Notifee",
+        "Jest"
+      ],
+      "links": {
+        "store": "https://play.google.com/store/apps/details?id=com.officialrescuen.app",
+        "live": "https://rescuen-web.netlify.app/",
+        "code": "https://github.com/bapanghosh0812/RESCUEN"
+      },
+      "cover": "rescuen",
+      "aliases": [
+        "rescuen",
+        "rescue",
+        "safety app",
+        "sos",
+        "play store",
+        "android app",
+        "emergency"
+      ]
+    },
+    {
+      "slug": "college-campus",
+      "name": "College Campus",
+      "tagline": "A verified network for Indian campuses.",
+      "kind": "Full-stack social platform · Web, Android & iOS",
+      "category": [
+        "web",
+        "mobile"
+      ],
+      "tier": "featured",
+      "year": "2026",
+      "status": "Live demo",
+      "summary": "A LinkedIn-style network where verified students and faculty share posts, reels and stories, chat in real time, go live and find placements — on web, Android and iOS from one React codebase.",
+      "metrics": [
+        {
+          "value": "3 platforms",
+          "label": "one React codebase"
+        },
+        {
+          "value": "Real-time",
+          "label": "DMs, alerts & live video"
+        },
+        {
+          "value": "K8s",
+          "label": "deployment manifests"
+        }
+      ],
+      "highlights": [
+        "Typo-tolerant search across people, colleges, posts and hashtags using trigram similarity.",
+        "One authenticated WebSocket channel for direct messages (typing indicators, read receipts), notifications and live chat.",
+        "Go live from the phone camera over peer-to-peer WebRTC — viewers join, chat and send hearts in real time.",
+        "Document-based verification: admins review ID proofs through private, expiring links in a moderation console.",
+        "Security: bcrypt, revocable JWT sessions, Google sign-in, rate limits and lockouts, Helmet CSP/HSTS, a CORS allow-list and byte-level upload checks.",
+        "In-memory TTL cache for hot reads, Winston logging and Sentry error monitoring.",
+        "Docker Compose (API + Nginx), Kubernetes manifests (Deployment, Service, Ingress, PVC), AWS S3 media and Capacitor builds for Android and iOS."
+      ],
+      "architecture": {
+        "flow": [
+          [
+            {
+              "t": "Web",
+              "s": "React 19 · Vite",
+              "i": "globe"
+            },
+            {
+              "t": "Mobile",
+              "s": "Capacitor",
+              "i": "smartphone"
+            }
+          ],
+          {
+            "t": "Nginx / Netlify",
+            "s": "static web app",
+            "i": "layers"
+          },
+          {
+            "t": "API",
+            "s": "Node · Express · REST + WebSocket",
+            "i": "server"
+          },
+          [
+            {
+              "t": "SQLite",
+              "s": "better-sqlite3",
+              "i": "database"
+            },
+            {
+              "t": "TTL cache",
+              "s": "in-memory",
+              "i": "zap"
+            },
+            {
+              "t": "AWS S3",
+              "s": "media",
+              "i": "cloud"
+            },
+            {
+              "t": "SMTP",
+              "s": "Nodemailer",
+              "i": "mail"
+            }
+          ]
+        ],
+        "note": "Docker Compose · Kubernetes manifests · peer-to-peer WebRTC live video"
+      },
+      "stack": [
+        "React 19",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "Zustand",
+        "Framer Motion",
+        "Node.js",
+        "Express",
+        "SQLite",
+        "WebSockets",
+        "WebRTC",
+        "JWT",
+        "Google OAuth",
+        "Zod",
+        "Helmet",
+        "Nodemailer",
+        "Winston",
+        "Sentry",
+        "AWS S3",
+        "Capacitor",
+        "Docker",
+        "Nginx",
+        "Kubernetes"
+      ],
+      "links": {
+        "live": "https://the-college-campus.netlify.app/",
+        "code": "https://github.com/bapanghosh0812/Social-App"
+      },
+      "cover": "college-campus",
+      "aliases": [
+        "college campus",
+        "campus",
+        "social app",
+        "social network",
+        "linkedin for colleges",
+        "webrtc"
+      ]
+    },
+    {
+      "slug": "fortress-upi",
+      "name": "Fortress UPI",
+      "tagline": "Payments that keep working offline.",
+      "kind": "Fintech · Security engineering",
+      "category": [
+        "mobile",
+        "systems"
+      ],
+      "tier": "featured",
+      "year": "2026",
+      "status": "Open-source prototype",
+      "summary": "A UPI app built on hardware-rooted trust: every API call, offline note and receipt is signed inside Android StrongBox / TEE or the iOS Secure Enclave, and pre-funded notes move phone-to-phone over BLE or NFC — settling automatically when either phone reconnects.",
+      "metrics": [
+        {
+          "value": "p99 < 15 ms",
+          "label": "settlement load gate"
+        },
+        {
+          "value": "Single-use",
+          "label": "StrongBox note keys"
+        },
+        {
+          "value": "Go · Kotlin · Swift",
+          "label": "byte-identical crypto"
+        }
+      ],
+      "highlights": [
+        "Hardware ECDSA P-256 keys in StrongBox / TEE; offline notes are backed by single-use keys (setMaxUsageCount(1)).",
+        "FOP/1 offline protocol: ephemeral ECDH handshake, AES-256-GCM payloads and signed receipts over BLE or NFC.",
+        "Go stdlib-only microservices — core ledger, identity, payments, offline-mesh and security gateway — with nonce de-duplication and settlement.",
+        "Cross-language golden test vectors keep the Go, Kotlin and Swift encoders byte-identical.",
+        "Distroless containers, Kubernetes (PSA restricted, KEDA, NetworkPolicies), a Kong gateway and zero-trust, SHA-pinned CI with SAST, secret, CVE and IaC gates.",
+        "Pearl & Midnight design system with measured contrast, plus an interactive web preview of every screen."
+      ],
+      "architecture": {
+        "flow": [
+          [
+            {
+              "t": "Payer phone",
+              "s": "StrongBox P-256 keys",
+              "i": "smartphone"
+            },
+            {
+              "t": "Payee phone",
+              "s": "BLE / NFC reader",
+              "i": "smartphone"
+            }
+          ],
+          {
+            "t": "FOP/1 voucher",
+            "s": "ECDH · AES-256-GCM",
+            "i": "lock"
+          },
+          {
+            "t": "Clearing mesh",
+            "s": "Go services · distroless",
+            "i": "server"
+          },
+          [
+            {
+              "t": "Attestation",
+              "s": "key-chain check",
+              "i": "shield-check"
+            },
+            {
+              "t": "Nonce store",
+              "s": "de-duplication",
+              "i": "database"
+            },
+            {
+              "t": "Ledger",
+              "s": "settlement",
+              "i": "wallet"
+            }
+          ]
+        ],
+        "note": "Settles automatically when either phone reconnects · p99 < 15 ms load gate"
+      },
+      "stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Android StrongBox / TEE",
+        "Swift (Secure Enclave)",
+        "Go",
+        "BLE",
+        "NFC",
+        "ECDH",
+        "AES-256-GCM",
+        "Docker (distroless)",
+        "Kubernetes",
+        "KEDA",
+        "Kong",
+        "GitHub Actions"
+      ],
+      "links": {
+        "code": "https://github.com/bapanghosh0812/FORTRESS-UPI",
+        "docs": "https://github.com/bapanghosh0812/FORTRESS-UPI/blob/main/docs/ARCHITECTURE.md"
+      },
+      "cover": "fortress-upi",
+      "aliases": [
+        "fortress",
+        "upi",
+        "offline upi",
+        "payment",
+        "payments",
+        "fintech",
+        "strongbox"
+      ]
+    },
+    {
+      "slug": "storyloom",
+      "name": "Storyloom",
+      "tagline": "Family stories, woven together — on Fire TV.",
+      "kind": "Fire TV app · Multi-agent generative AI",
+      "category": [
+        "ai",
+        "mobile"
+      ],
+      "tier": "featured",
+      "year": "2026",
+      "status": "Open source",
+      "role": "Team of two — I owned product, the backend, the AI engine and the cloud infrastructure; Jayashree Mondal built the frontend and UI design.",
+      "summary": "A 10-foot Amazon Fire TV app where a family co-creates an original illustrated, narrated story: phones join by QR, a child's paper drawing becomes the hero, and everyone votes on what happens next.",
+      "metrics": [
+        {
+          "value": "< 1 min",
+          "label": "to weave a story"
+        },
+        {
+          "value": "5 agents",
+          "label": "on Bedrock AgentCore"
+        },
+        {
+          "value": "24 h",
+          "label": "auto-delete for photos"
+        }
+      ],
+      "highlights": [
+        "Multi-agent story engine on Amazon Bedrock AgentCore with Strands agents — Director (Amazon Nova 2 Lite), Guardian, Illustrator, Narrator and Hero vision.",
+        "Stability AI on Bedrock turns a child's sketch into storybook art that keeps the child's own lines.",
+        "Amazon Polly narration with word-by-word read-along timing for early literacy.",
+        "Family vote at the story's fork — on phones or the Fire TV remote — with D-pad spatial navigation.",
+        "Kid-safe by design: Bedrock Guardrails on every input and output, Rekognition screening, EXIF stripping, CloudFront signed URLs and 24-hour photo deletion.",
+        "Everything as code with AWS CDK: API Gateway (HTTP + WebSocket), Lambda, DynamoDB, S3 and AgentCore Memory."
+      ],
+      "architecture": {
+        "flow": [
+          [
+            {
+              "t": "Fire TV app",
+              "s": "React Native for TV",
+              "i": "tv"
+            },
+            {
+              "t": "Phones",
+              "s": "web companion · QR",
+              "i": "smartphone"
+            }
+          ],
+          {
+            "t": "API Gateway",
+            "s": "HTTP + WebSocket · Lambda",
+            "i": "server"
+          },
+          {
+            "t": "AgentCore Runtime",
+            "s": "Strands multi-agent",
+            "i": "bot"
+          },
+          [
+            {
+              "t": "Director",
+              "s": "Amazon Nova",
+              "i": "wand-sparkles"
+            },
+            {
+              "t": "Illustrator",
+              "s": "Stability AI",
+              "i": "sparkles"
+            },
+            {
+              "t": "Narrator",
+              "s": "Amazon Polly",
+              "i": "mic"
+            },
+            {
+              "t": "Guardian",
+              "s": "Bedrock Guardrails",
+              "i": "shield-check"
+            }
+          ]
+        ],
+        "note": "DynamoDB · S3 · CloudFront signed URLs · AgentCore Memory · AWS CDK"
+      },
+      "stack": [
+        "React Native for TV",
+        "Expo",
+        "TypeScript",
+        "Next.js",
+        "Python",
+        "Amazon Bedrock AgentCore",
+        "Strands Agents",
+        "Amazon Nova",
+        "Stability AI",
+        "Amazon Polly",
+        "Bedrock Guardrails",
+        "Rekognition",
+        "AWS Lambda",
+        "API Gateway WebSocket",
+        "DynamoDB",
+        "S3",
+        "CloudFront",
+        "AWS CDK"
+      ],
+      "links": {
+        "code": "https://github.com/bapanghosh0812/Fire-TV-Amazon"
+      },
+      "cover": "storyloom",
+      "aliases": [
+        "storyloom",
+        "fire tv",
+        "firetv",
+        "amazon",
+        "bedrock",
+        "tv app",
+        "story"
+      ]
+    },
+    {
+      "slug": "vitrine",
+      "name": "Vitrine",
+      "tagline": "Products, beautifully told.",
+      "kind": "AI product-card generator · Angular 22",
+      "category": [
+        "web",
+        "ai"
+      ],
+      "tier": "featured",
+      "year": "2026",
+      "status": "Live",
+      "summary": "Type a product name and category and get an AI-written title, description and SEO keywords on six luxury card templates — editable, undoable and exportable as PNG, JSON or HTML.",
+      "metrics": [
+        {
+          "value": "97–100",
+          "label": "Lighthouse performance"
+        },
+        {
+          "value": "184",
+          "label": "automated tests"
+        },
+        {
+          "value": "13 / 13",
+          "label": "security self-attack rounds"
+        }
+      ],
+      "highlights": [
+        "Angular 22 with standalone components, signals, zoneless change detection and prerendered public pages.",
+        "One Hono API deployed to both Vercel and Netlify Functions — Groq first, automatic Gemini fallback, strict zod-validated JSON.",
+        "Prompt-injection-safe design: user input is serialised inside escaped data blocks and AI output is stripped and rendered only as text.",
+        "“Ask Kabir” support assistant grounded in the Help Center with BM25 retrieval, sources and a redaction filter.",
+        "Human support tickets by email with branded confirmations, per-IP and per-recipient rate limits and a honeypot.",
+        "Firebase Auth + Firestore with owner-only rules (16 rules tests), Playwright e2e on five browsers and WCAG 2.1 AA checks with axe-core.",
+        "Brand Kit, undo/redo signal store, command palette, PWA with an offline page and light, dark and OLED themes."
+      ],
+      "architecture": {
+        "flow": [
+          {
+            "t": "Angular 22",
+            "s": "prerendered · signals",
+            "i": "globe"
+          },
+          {
+            "t": "Hono API",
+            "s": "Vercel & Netlify Functions",
+            "i": "server"
+          },
+          {
+            "t": "Guards",
+            "s": "zod · CORS · rate limits",
+            "i": "shield-check"
+          },
+          [
+            {
+              "t": "Groq",
+              "s": "primary model",
+              "i": "zap"
+            },
+            {
+              "t": "Gemini",
+              "s": "fallback",
+              "i": "sparkles"
+            },
+            {
+              "t": "Firebase",
+              "s": "Auth · Firestore",
+              "i": "database"
+            },
+            {
+              "t": "Gmail SMTP",
+              "s": "support tickets",
+              "i": "mail"
+            }
+          ]
+        ]
+      },
+      "stack": [
+        "Angular 22",
+        "TypeScript",
+        "Signals",
+        "Tailwind CSS v4",
+        "Hono",
+        "Groq",
+        "Google Gemini",
+        "Zod",
+        "Firebase Auth",
+        "Firestore",
+        "Vitest",
+        "Playwright",
+        "axe-core",
+        "GitHub Actions",
+        "Vercel",
+        "Netlify"
+      ],
+      "links": {
+        "live": "https://vitrine-ai-product-cards.vercel.app",
+        "code": "https://github.com/bapanghosh0812/vitrine-ai-product-cards"
+      },
+      "cover": "vitrine",
+      "aliases": [
+        "vitrine",
+        "product card",
+        "product cards",
+        "angular",
+        "kabir"
+      ]
+    },
+    {
+      "slug": "cachet",
+      "name": "Cachet",
+      "tagline": "Notes, sealed.",
+      "kind": "Secure note sharing · Next.js 16 + PostgreSQL",
+      "category": [
+        "web",
+        "ai",
+        "systems"
+      ],
+      "tier": "featured",
+      "year": "2026",
+      "status": "Live",
+      "summary": "Write private notes and share them with links that expire, unlock with a key or vanish after a single view — with view counts that stay accurate under concurrency.",
+      "metrics": [
+        {
+          "value": "One-time",
+          "label": "self-destructing links"
+        },
+        {
+          "value": "Race-safe",
+          "label": "view counting"
+        },
+        {
+          "value": "TOTP 2FA",
+          "label": "with backup codes"
+        }
+      ],
+      "highlights": [
+        "One-time and time-based share links, public or key-protected and revocable at any moment — several links per note with QR codes and activity logs.",
+        "Race-safe view counting with row-level locking and atomic conditional updates in PostgreSQL, proven by a concurrency test against a real server.",
+        "Custom server-side sessions (hashed opaque tokens), scrypt password hashing, TOTP two-factor auth with backup codes and remote sign-out.",
+        "A local security advisor flags passwords, API keys, card numbers (Luhn) and Aadhaar/PAN before a note is shared.",
+        "Optional Gemini features — rewrite, summarise, translate, auto-tags and a “smart share” that suggests safe link settings.",
+        "Markdown editor with version history, templates, trash & restore, a command palette and a dashboard with 14-day analytics."
+      ],
+      "architecture": {
+        "flow": [
+          {
+            "t": "Next.js 16",
+            "s": "App Router · React 19",
+            "i": "globe"
+          },
+          {
+            "t": "Hono API",
+            "s": "typed client · zod",
+            "i": "server"
+          },
+          [
+            {
+              "t": "PostgreSQL",
+              "s": "Drizzle · row locks",
+              "i": "database"
+            },
+            {
+              "t": "Sessions",
+              "s": "hashed tokens · TOTP",
+              "i": "lock"
+            },
+            {
+              "t": "Gemini",
+              "s": "optional AI",
+              "i": "sparkles"
+            }
+          ]
+        ]
+      },
+      "stack": [
+        "Next.js 16",
+        "React 19",
+        "TypeScript",
+        "Hono",
+        "PostgreSQL",
+        "Drizzle ORM",
+        "Tailwind CSS 4",
+        "shadcn/ui",
+        "Zod",
+        "TanStack Query",
+        "Google Gemini",
+        "Vitest",
+        "Vercel"
+      ],
+      "links": {
+        "live": "https://note-taking-app-tau-smoky.vercel.app",
+        "code": "https://github.com/bapanghosh0812/Note-Taking-App"
+      },
+      "cover": "cachet",
+      "aliases": [
+        "cachet",
+        "notes",
+        "note taking",
+        "note-taking",
+        "secure notes",
+        "share links"
+      ]
+    },
+    {
+      "slug": "8speedyservice",
+      "name": "8SpeedyService",
+      "tagline": "An on-road mechanic in three taps.",
+      "kind": "On-demand dispatch · Flutter + Fastify",
+      "category": [
+        "mobile",
+        "web",
+        "systems"
+      ],
+      "tier": "more",
+      "year": "2026",
+      "status": "Live demo",
+      "summary": "An on-demand roadside-mechanic platform for India: a 3-tap customer booking app, a partner-mechanic duty console and a real-time dispatch engine on PostgreSQL.",
+      "highlights": [
+        "Customer app: pick the issue, pick the vehicle (fixed visit fees from ₹149) and book a verified mechanic, with live GPS radar tracking.",
+        "Partner app: workshop KYC (ID proof, selfie, shop photo), an online/offline duty switch, 20-second job-offer alerts, 4-digit start-OTP verification and extra-part billing with a 15% ledger.",
+        "Two Flutter (Material 3) apps sharing one core package of domain models, theme, REST and Socket.IO clients.",
+        "Fastify 5 + PostgreSQL dispatch and ledger service with Socket.IO real-time updates and a Postgres adapter for multi-instance fan-out.",
+        "Firebase phone sign-in verified server-side; Helmet, rate limiting, zod validation and integration tests on an embedded PostgreSQL."
+      ],
+      "architecture": {
+        "flow": [
+          [
+            {
+              "t": "Customer app",
+              "s": "Flutter · Material 3",
+              "i": "smartphone"
+            },
+            {
+              "t": "Partner app",
+              "s": "Flutter · Material 3",
+              "i": "smartphone"
+            }
+          ],
+          {
+            "t": "Fastify API",
+            "s": "REST + Socket.IO",
+            "i": "server"
+          },
+          [
+            {
+              "t": "PostgreSQL 16",
+              "s": "dispatch & ledger",
+              "i": "database"
+            },
+            {
+              "t": "Firebase Auth",
+              "s": "phone OTP",
+              "i": "lock"
+            }
+          ]
+        ]
+      },
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Material 3",
+        "Fastify",
+        "Node.js",
+        "TypeScript",
+        "PostgreSQL 16",
+        "Socket.IO",
+        "Firebase Auth",
+        "Zod",
+        "GitHub Actions",
+        "Netlify"
+      ],
+      "links": {
+        "live": "https://8speedyservice.netlify.app/",
+        "code": "https://github.com/bapanghosh0812/8SpeedyService"
+      },
+      "cover": "8speedyservice",
+      "aliases": [
+        "8speedyservice",
+        "speedy",
+        "speedy service",
+        "mechanic",
+        "roadside",
+        "flutter app",
+        "dispatch"
+      ],
+      "hidden": true
+    },
+    {
+      "slug": "m-chat",
+      "name": "M-Chat",
+      "tagline": "One workspace, every frontier model.",
+      "kind": "Multi-agent AI workspace",
+      "category": [
+        "web",
+        "ai"
+      ],
+      "tier": "more",
+      "year": "2026",
+      "status": "Live",
+      "summary": "A multi-agent conversational workspace that routes between Google Gemini, OpenAI and Anthropic models with live web grounding, a two-stage research pipeline and streaming answers — re-architected from my original Python/Streamlit “Mini ChatGPT” into a full-stack TypeScript app.",
+      "highlights": [
+        "Multi-provider model picker with live backend availability checks and bring-your-own-key support.",
+        "Adaptive modes: Auto routes between direct chat, live Google Search grounding with citations and Research (Research Agent → Summarizer Agent).",
+        "Low-latency NDJSON streaming over Netlify Functions.",
+        "Voice dictation, read-aloud, pinned chats, search, multimodal attachments (images, PDFs, text), read-only share links and PDF export.",
+        "Input validation, rate limiting, key guards and an adversarial security test suite."
+      ],
+      "architecture": {
+        "flow": [
+          {
+            "t": "React UI",
+            "s": "TypeScript · Vite",
+            "i": "globe"
+          },
+          {
+            "t": "Netlify Functions",
+            "s": "NDJSON stream · guards",
+            "i": "server"
+          },
+          [
+            {
+              "t": "Gemini",
+              "s": "+ Search grounding",
+              "i": "sparkles"
+            },
+            {
+              "t": "OpenAI",
+              "s": "chat models",
+              "i": "bot"
+            },
+            {
+              "t": "Anthropic",
+              "s": "chat models",
+              "i": "brain"
+            }
+          ]
+        ]
+      },
+      "stack": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Netlify Functions",
+        "Google Gemini API",
+        "OpenAI API",
+        "Anthropic API",
+        "Web Speech API",
+        "NDJSON streaming"
+      ],
+      "links": {
+        "live": "https://chatbot-or-mini-chatgpt.netlify.app/",
+        "code": "https://github.com/bapanghosh0812/M-Chat"
+      },
+      "cover": "m-chat",
+      "aliases": [
+        "m-chat",
+        "mchat",
+        "mini chatgpt",
+        "chatbot",
+        "chat app",
+        "multi agent",
+        "multi-agent"
+      ]
+    },
+    {
+      "slug": "wearsuper",
+      "name": "WEARSUPER",
+      "tagline": "Streetwear with a cinematic storefront.",
+      "kind": "MERN e-commerce",
+      "category": [
+        "web"
+      ],
+      "tier": "more",
+      "year": "2026",
+      "status": "Live",
+      "summary": "A full-stack streetwear store — a cinematic GSAP scroll hero, real accounts with bcrypt + JWT, and MongoDB-backed orders with server-side pricing, tracking and cancellation.",
+      "metrics": [
+        {
+          "value": "240-frame",
+          "label": "scroll-scrubbed hero"
+        },
+        {
+          "value": "17",
+          "label": "API tests"
+        }
+      ],
+      "highlights": [
+        "Cinematic hero — a 240-frame image sequence scrubbed by GSAP ScrollTrigger, loaded progressively (a lighter 120-frame set on phones).",
+        "Real accounts with bcrypt-hashed passwords and signed JWT sessions behind a rate-limited login.",
+        "Orders in MongoDB — the server re-prices every line from the database, validates size and colour and issues order, tracking and invoice numbers.",
+        "Order-tracking timeline, printable receipts and cancellation within 20 minutes, enforced by the API.",
+        "Product pages with hover-zoom, a drag-to-rotate 360° viewer, reviews, wishlist and a multi-step (simulated) checkout.",
+        "API hardened with Helmet, a CORS allow-list and input validation; 17 API tests on an in-memory MongoDB (Node test runner + Supertest)."
+      ],
+      "architecture": {
+        "flow": [
+          {
+            "t": "Storefront",
+            "s": "React 19 · Vite · GSAP",
+            "i": "globe"
+          },
+          {
+            "t": "REST + JWT",
+            "s": "Bearer token",
+            "i": "lock"
+          },
+          {
+            "t": "Express 5 API",
+            "s": "helmet · cors · rate-limit",
+            "i": "server"
+          },
+          [
+            {
+              "t": "Users",
+              "s": "Mongoose",
+              "i": "user"
+            },
+            {
+              "t": "Products",
+              "s": "Mongoose",
+              "i": "layers"
+            },
+            {
+              "t": "Orders",
+              "s": "Mongoose",
+              "i": "database"
+            }
+          ]
+        ]
+      },
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS v4",
+        "GSAP ScrollTrigger",
+        "Node.js",
+        "Express 5",
+        "MongoDB",
+        "Mongoose",
+        "JWT",
+        "bcrypt",
+        "Helmet",
+        "Rate limiting",
+        "Node test runner",
+        "Supertest",
+        "Netlify",
+        "Render"
+      ],
+      "links": {
+        "live": "https://official-wearsuper-cloth-store.netlify.app/",
+        "code": "https://github.com/bapanghosh0812/cloth"
+      },
+      "cover": "wearsuper",
+      "aliases": [
+        "wearsuper",
+        "wear super",
+        "cloth",
+        "clothing",
+        "mern",
+        "store",
+        "ecommerce",
+        "e-commerce"
+      ]
+    },
+    {
+      "slug": "fresnel",
+      "name": "Fresnel",
+      "tagline": "Website accessibility & performance checker.",
+      "kind": "Web audit tool · Angular 19 + Node",
+      "category": [
+        "web",
+        "systems"
+      ],
+      "tier": "more",
+      "year": "2026",
+      "status": "Live",
+      "summary": "Audits a GitHub repository or a Lighthouse report across Performance, Accessibility, Best Practices, SEO and light security — then generates ready-to-apply Git commits, unified diffs and a downloadable .patch.",
+      "highlights": [
+        "Static repository audit that never executes untrusted code: LCP prioritisation, render-blocking CSS, CLS image dimensions, WCAG 2.1 AA/AAA checks, CSP, canonical/OG/JSON-LD and DOM-XSS sinks.",
+        "Lighthouse JSON analysis that maps failing audits and metric savings back to the templates and stylesheets that caused them.",
+        "Interactive diff inspector with per-category commit selection, git format-patch export and a one-click git am + gh pr create command.",
+        "Angular 19 standalone components with signals, a Node REST API on Netlify Functions, light/dark themes and a sandbox demo mode."
+      ],
+      "stack": [
+        "Angular 19",
+        "TypeScript",
+        "Signals",
+        "SCSS",
+        "Node.js",
+        "Netlify Functions",
+        "Lighthouse"
+      ],
+      "links": {
+        "live": "https://website-performance-checker.netlify.app/",
+        "code": "https://github.com/bapanghosh0812/Website-Accessibility-Performance-Checker"
+      },
+      "cover": "fresnel",
+      "aliases": [
+        "fresnel",
+        "accessibility",
+        "performance checker",
+        "lighthouse",
+        "audit",
+        "website checker"
+      ]
+    },
+    {
+      "slug": "wizard-chess-3d",
+      "name": "Wizard Chess 3D",
+      "tagline": "Chess, with a little magic.",
+      "kind": "3D browser game",
+      "category": [
+        "game",
+        "web",
+        "ai"
+      ],
+      "tier": "more",
+      "year": "2026",
+      "status": "Play now",
+      "summary": "A Gothic-cathedral 3D chess game in the browser — sculpted stone pieces, cinematic captures with stone-shatter physics, multiple camera views and a single-player AI opponent.",
+      "highlights": [
+        "Three.js scene with GLB models, orbit controls and player, overhead, side and cathedral camera modes.",
+        "Hand-written chess engine with legal-move validation.",
+        "Cinematic melee captures with stone-shatter physics.",
+        "Play as white or black against an AI opponent — right in the browser, nothing to install."
+      ],
+      "stack": [
+        "React 19",
+        "Three.js",
+        "TypeScript",
+        "Vite",
+        "Google Gemini API"
+      ],
+      "links": {
+        "live": "https://wizard-chess-3d-by-bapan.netlify.app/",
+        "code": "https://github.com/bapanghosh0812/wizard-chess-3d"
+      },
+      "cover": "wizard-chess-3d",
+      "aliases": [
+        "wizard chess",
+        "chess",
+        "3d game",
+        "game",
+        "three.js",
+        "threejs"
+      ]
+    },
+    {
+      "slug": "colorcraft",
+      "name": "ColorCraft",
+      "tagline": "Personalised colouring books in a minute.",
+      "kind": "Generative-AI web app",
+      "category": [
+        "web",
+        "ai"
+      ],
+      "tier": "more",
+      "year": "2026",
+      "status": "Live",
+      "summary": "Turns a theme and a child's name into a personalised five-page story with thick-line Gemini artwork, a digital colouring studio and print-ready PDF export.",
+      "highlights": [
+        "An Express API keeps the Gemini key on the server, with routes for the story plan, page images and chat.",
+        "Story planning — Gemini returns a structured five-page storyline with captions and a prompt for every page.",
+        "Image generation with an automatic model fallback chain, so a page still renders if one model is unavailable.",
+        "Digital colouring studio on HTML5 Canvas, page regeneration with custom prompts and one-click PDF export with jsPDF."
+      ],
+      "stack": [
+        "React 19",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS v4",
+        "Motion",
+        "Node.js",
+        "Express",
+        "Google Gemini API",
+        "HTML5 Canvas",
+        "jsPDF"
+      ],
+      "links": {
+        "live": "https://children-s-coloring-book-generator.netlify.app/",
+        "code": "https://github.com/bapanghosh0812/Children-s-Coloring-Book-Generator"
+      },
+      "cover": "colorcraft",
+      "aliases": [
+        "colorcraft",
+        "color craft",
+        "colouring book",
+        "coloring book",
+        "kids"
+      ]
+    },
+    {
+      "slug": "rescuen-web",
+      "name": "Rescuen Web",
+      "tagline": "The official home of Rescuen.",
+      "kind": "Next.js 15 platform",
+      "category": [
+        "web",
+        "ai"
+      ],
+      "tier": "more",
+      "year": "2026",
+      "status": "Live",
+      "summary": "The official website for Rescuen — passwordless phone-OTP login, a live AI safety assistant, a real contact centre that emails and auto-replies, and a secure serverless backend.",
+      "highlights": [
+        "Passwordless phone → OTP login (Firebase, invisible reCAPTCHA), verified server-side with the Firebase Admin SDK.",
+        "AI safety assistant on Google Gemini, running server-side so keys never reach the browser.",
+        "Contact centre that emails straight to Gmail and sends the sender an instant branded auto-reply (Nodemailer).",
+        "CSP and security headers, rate limiting, zod validation, a honeypot and server-only secrets; full legal and trust pages with JSON-LD."
+      ],
+      "stack": [
+        "Next.js 15",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Firebase Auth",
+        "Firebase Admin SDK",
+        "Google Gemini",
+        "Nodemailer",
+        "Zod",
+        "Netlify"
+      ],
+      "links": {
+        "live": "https://rescuen-web.netlify.app/",
+        "code": "https://github.com/bapanghosh0812/rescuen-web"
+      },
+      "cover": "rescuen-web",
+      "aliases": [
+        "rescuen web",
+        "rescuen website",
+        "rescuen site"
+      ]
+    },
+    {
+      "slug": "ghoshkart",
+      "name": "GhoshKart",
+      "tagline": "Passkey shopping in vanilla JavaScript.",
+      "kind": "E-commerce · Vanilla JS",
+      "category": [
+        "web"
+      ],
+      "tier": "more",
+      "year": "2025",
+      "status": "Live",
+      "summary": "A multi-page e-commerce site without frameworks — catalogue search and filters, cart, a UPI-style checkout, order tracking and fingerprint/passkey login through WebAuthn.",
+      "highlights": [
+        "Password, PIN and device fingerprint / passkey sign-in through the Web Authentication (WebAuthn) API.",
+        "Explore page with search and filters, product pages and a persistent cart.",
+        "UPI-style (simulated) checkout and an order history with search and tracking."
+      ],
+      "stack": [
+        "HTML5",
+        "CSS3",
+        "JavaScript (ES6+)",
+        "WebAuthn",
+        "Web Crypto API",
+        "localStorage"
+      ],
+      "links": {
+        "live": "https://e-commerce-site-by-bapanghosh.netlify.app/",
+        "code": "https://github.com/bapanghosh0812/E-commerce-Site"
+      },
+      "cover": "ghoshkart",
+      "aliases": [
+        "ghoshkart",
+        "ghosh kart",
+        "webauthn",
+        "passkey",
+        "shopping site"
+      ]
+    },
+    {
+      "slug": "cognifyz-suite",
+      "name": "Cognifyz Internship Suite",
+      "tagline": "Every internship task, one premium site.",
+      "kind": "Internship showcase",
+      "category": [
+        "web"
+      ],
+      "tier": "more",
+      "year": "2026",
+      "status": "Live",
+      "summary": "A connected multi-page site housing all three levels of my Cognifyz web-development internship — plus a full scientific calculator and a colour studio.",
+      "highlights": [
+        "Scientific calculator with standard and scientific modes, memory, history, keyboard support and a hand-written tokenizer + shunting-yard evaluator.",
+        "Colour Studio with HEX/RGB/HSL sliders, a gradient builder and a palette generator.",
+        "Responsive card (Bulma), grid (Bootstrap), media-query layouts, a lightbox gallery with slideshow and a landing page — under one shared design system."
+      ],
+      "stack": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Bootstrap 5",
+        "Bulma"
+      ],
+      "links": {
+        "live": "https://cognifyz-internship-tasks-bapan.netlify.app/",
+        "code": "https://github.com/bapanghosh0812/cognifyz-Internship-Tasks"
+      },
+      "cover": "cognifyz-suite",
+      "aliases": [
+        "cognifyz",
+        "internship tasks",
+        "calculator",
+        "color studio"
+      ]
+    },
+    {
+      "slug": "online-exam",
+      "name": "Online Examination System",
+      "tagline": "Timed exams with instant results.",
+      "kind": "Assessment platform",
+      "category": [
+        "web"
+      ],
+      "tier": "more",
+      "year": "2025",
+      "status": "Live",
+      "summary": "A browser-based exam platform with student and admin portals — timed exams, auto-grading, results and printable grade cards.",
+      "highlights": [
+        "Separate student and admin portals with sign-up and login.",
+        "Countdown timer with automatic submission when time runs out.",
+        "Automatic grading, a results dashboard and a printable grade card; password-reset and help-desk emails via EmailJS."
+      ],
+      "stack": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "EmailJS",
+        "localStorage"
+      ],
+      "links": {
+        "live": "https://onlineexaminationsystems7.netlify.app/",
+        "code": "https://github.com/bapanghosh0812/Online-exam-system"
+      },
+      "cover": "online-exam",
+      "aliases": [
+        "online exam",
+        "examination",
+        "exam system",
+        "test platform"
+      ]
+    },
+    {
+      "slug": "face-mask-detection",
+      "name": "Face Mask Detection",
+      "tagline": "Real-time mask detection from a webcam.",
+      "kind": "Computer vision",
+      "category": [
+        "ai"
+      ],
+      "tier": "archive",
+      "year": "2025",
+      "status": "Source",
+      "summary": "OpenCV finds each face in a live webcam feed and a MobileNetV2 transfer-learning model classifies mask / no mask.",
+      "highlights": [
+        "Transfer learning on MobileNetV2 (ImageNet weights) with a custom dense head and data augmentation.",
+        "Live inference — Haar-cascade face detection → 224×224 crop → prediction, drawn as a labelled box."
+      ],
+      "stack": [
+        "Python",
+        "TensorFlow",
+        "Keras",
+        "MobileNetV2",
+        "OpenCV",
+        "NumPy",
+        "scikit-learn"
+      ],
+      "links": {
+        "code": "https://github.com/bapanghosh0812/Face_mask_detection"
+      },
+      "aliases": [
+        "face mask",
+        "mask detection",
+        "opencv",
+        "computer vision",
+        "tensorflow"
+      ]
+    },
+    {
+      "slug": "cutslot",
+      "name": "CutSlot",
+      "tagline": "Salon chairs, booked by the slot.",
+      "kind": "Flutter booking app",
+      "category": [
+        "mobile"
+      ],
+      "tier": "archive",
+      "year": "2026",
+      "status": "Source",
+      "summary": "A salon-partner app in Flutter for managing chair availability, time slots and customer bookings.",
+      "highlights": [
+        "Flutter app targeting Android, iOS and desktop from one codebase."
+      ],
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Material Design"
+      ],
+      "links": {
+        "code": "https://github.com/bapanghosh0812/cutslot"
+      },
+      "aliases": [
+        "cutslot",
+        "cut slot",
+        "salon",
+        "booking app"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "id": "wipro-java",
+      "title": "Java Full Stack — TalentNext",
+      "issuer": "Wipro",
+      "date": "Jul – Oct 2026",
+      "type": "certification",
+      "featured": true,
+      "credentialId": "TNext-SE-2026-J_260300163",
+      "image": "wipro-java-full-stack",
+      "tags": [
+        "Java",
+        "Full Stack",
+        "OOP"
+      ],
+      "text": "Digital Skills Readiness Program — Tech Skill course completion on Java Full Stack."
+    },
+    {
+      "id": "oracle-agentic",
+      "title": "Agentic AI Certified Foundations Associate",
+      "issuer": "Oracle",
+      "date": "Sep 2026",
+      "type": "certification",
+      "featured": true,
+      "credentialId": "102959402AAI26OFA",
+      "image": "oracle-agentic-ai",
+      "tags": [
+        "Agentic AI",
+        "AI Agents",
+        "LLMs"
+      ],
+      "text": "Foundations of agentic AI — how agents use LLMs to reason, plan and act with tools."
+    },
+    {
+      "id": "cognifyz-cert",
+      "title": "Web Development Internship",
+      "issuer": "Cognifyz IT Solutions",
+      "date": "Aug – Sep 2026",
+      "type": "internship",
+      "featured": true,
+      "credentialId": "CTI/A1/C410735",
+      "image": "cognifyz-internship",
+      "tags": [
+        "Web Development",
+        "JavaScript"
+      ],
+      "text": "Internship completion — all three task levels, commended for dedication, coordination, communication and attention to detail."
+    },
+    {
+      "id": "cognifyz-offer",
+      "title": "Internship Offer Letter",
+      "issuer": "Cognifyz IT Solutions",
+      "date": "Aug 2026",
+      "type": "internship",
+      "credentialId": "CTI/A1/C410735",
+      "image": "cognifyz-offer",
+      "tags": [
+        "Web Development"
+      ],
+      "text": "Selected as a Web Development Intern for front-end and back-end work."
+    },
+    {
+      "id": "oracle-genai",
+      "title": "OCI Generative AI Professional",
+      "issuer": "Oracle",
+      "date": "Oct 2025",
+      "type": "certification",
+      "featured": true,
+      "credentialId": "102959402OCI25GAIOCP",
+      "image": "oracle-genai-professional",
+      "tags": [
+        "Generative AI",
+        "LLMs",
+        "RAG"
+      ],
+      "text": "Professional-level certification to design, build and deploy generative-AI solutions on Oracle Cloud — LLMs, RAG, embeddings and vector search."
+    },
+    {
+      "id": "oracle-genai-badge",
+      "title": "OCI Generative AI — Digital Badge",
+      "issuer": "Oracle",
+      "date": "2025",
+      "type": "badge",
+      "image": "oracle-genai-badge",
+      "tags": [
+        "Generative AI",
+        "OCI"
+      ],
+      "text": "Official Oracle digital badge for the OCI 2025 Generative AI Professional credential."
+    },
+    {
+      "id": "ibm-ai",
+      "title": "AI Fundamentals with Capstone",
+      "issuer": "IBM SkillsBuild",
+      "date": "Oct 2025",
+      "type": "certification",
+      "featured": true,
+      "image": "ibm-ai-fundamentals",
+      "tags": [
+        "AI",
+        "Machine Learning",
+        "NLP"
+      ],
+      "text": "Foundations of AI and ML — machine learning, deep learning, NLP and computer vision — completed with a hands-on capstone."
+    },
+    {
+      "id": "kaggle-agents",
+      "title": "5-Day AI Agents Intensive",
+      "issuer": "Google × Kaggle",
+      "date": "2025",
+      "type": "certification",
+      "featured": true,
+      "image": "kaggle-google-ai-agents",
+      "tags": [
+        "AI Agents",
+        "GenAI"
+      ],
+      "text": "Building AI agents — function calling, tool use, RAG and agentic workflows with generative models."
+    },
+    {
+      "id": "azure",
+      "title": "Azure Fundamentals (AZ-900)",
+      "issuer": "Microsoft",
+      "date": "Dec 2024",
+      "type": "certification",
+      "featured": true,
+      "credentialId": "1D7710EDBE9E1561",
+      "image": "microsoft-azure-fundamentals",
+      "tags": [
+        "Azure",
+        "Cloud"
+      ],
+      "text": "Core cloud concepts on Microsoft Azure — compute, storage, networking, security, pricing and SLAs."
+    },
+    {
+      "id": "edutantr-intern",
+      "title": "AI / ML Internship",
+      "issuer": "EDU TANTR",
+      "date": "Aug – Nov 2025",
+      "type": "internship",
+      "image": "edutantr-internship",
+      "tags": [
+        "AI/ML",
+        "Python"
+      ],
+      "text": "A four-month AI/ML internship — practical model building and exposure to professional engineering workflows."
+    },
+    {
+      "id": "edutantr-course",
+      "title": "AI / ML Course Completion",
+      "issuer": "EDU TANTR",
+      "date": "2025",
+      "type": "course",
+      "image": "edutantr-course",
+      "tags": [
+        "AI/ML"
+      ],
+      "text": "Comprehensive AI/ML course covering core ML concepts with applied mini-projects."
+    },
+    {
+      "id": "kaggle-python",
+      "title": "Python Coder Badge",
+      "issuer": "Kaggle",
+      "date": "Nov 2025",
+      "type": "badge",
+      "image": "kaggle-python-coder",
+      "tags": [
+        "Python"
+      ],
+      "text": "Earned for hands-on Python programming on Kaggle."
+    },
+    {
+      "id": "kaggle-dataset",
+      "title": "Dataset Creator Badge",
+      "issuer": "Kaggle",
+      "date": "2025",
+      "type": "badge",
+      "image": "kaggle-dataset-creator",
+      "tags": [
+        "Datasets",
+        "Data Science"
+      ],
+      "text": "Awarded for creating and publishing datasets for the data-science community."
+    },
+    {
+      "id": "pvg-dsa",
+      "title": "Data Structures using C",
+      "issuer": "PVG's College of Engineering, Nashik",
+      "date": "Dec 2024",
+      "type": "course",
+      "credentialId": "CPIZG8-CE034206",
+      "image": "pvg-dsa-c",
+      "tags": [
+        "DSA",
+        "C"
+      ],
+      "text": "Cleared the Data Structures using C assessment, organised by the E&TC department."
+    },
+    {
+      "id": "knowledgegate-css",
+      "title": "CSS Certification Test",
+      "issuer": "KnowledgeGate",
+      "date": "2025",
+      "type": "course",
+      "image": "knowledgegate-css",
+      "tags": [
+        "CSS",
+        "Web"
+      ],
+      "text": "Passed the CSS certification test covering modern styling, layout and responsive design."
+    },
+    {
+      "id": "bcet-datasculpt",
+      "title": "DataSculpt STTP — ML & Data Science",
+      "issuer": "BCET Durgapur",
+      "date": "Mar 2024",
+      "type": "workshop",
+      "image": "bcet-datasculpt",
+      "tags": [
+        "Machine Learning",
+        "Data Science"
+      ],
+      "text": "International short-term training programme on machine learning and data science."
+    },
+    {
+      "id": "bcet-infosec",
+      "title": "Information Security Workshop",
+      "issuer": "BCET Durgapur",
+      "date": "Jan 2024",
+      "type": "workshop",
+      "image": "bcet-infosec",
+      "tags": [
+        "Security"
+      ],
+      "text": "One-day workshop on information security by the departments of IT, CSE and CSE (AI-ML)."
+    }
+  ],
+  "updates": [
+    {
+      "date": "2026-11-21",
+      "text": "Rebuilt this portfolio — new noir & gold design, Mini Bapan assistant and a live GitHub feed."
+    },
+    {
+      "date": "2026-11-18",
+      "text": "Launched Vitrine, an AI product-card generator on Angular 22 (Lighthouse 97–100, 184 tests).",
+      "project": "vitrine"
+    },
+    {
+      "date": "2026-11-03",
+      "text": "Shipped Fresnel, a website accessibility & performance checker on Angular 19.",
+      "project": "fresnel"
+    },
+    {
+      "date": "2026-11-01",
+      "text": "Released Wizard Chess 3D — Three.js chess with an AI opponent.",
+      "project": "wizard-chess-3d"
+    },
+    {
+      "date": "2026-10-31",
+      "text": "Completed Wipro TalentNext — Java Full Stack (Jul–Oct 2026)."
+    },
+    {
+      "date": "2026-10-06",
+      "text": "Began Fortress UPI — hardware-attested offline payments on Android StrongBox and Go.",
+      "project": "fortress-upi"
+    },
+    {
+      "date": "2026-09-29",
+      "text": "Built Cachet — secure, expiring note sharing on Next.js 16 and PostgreSQL.",
+      "project": "cachet"
+    },
+    {
+      "date": "2026-09-24",
+      "text": "Built Storyloom for Amazon Fire TV on Bedrock AgentCore.",
+      "project": "storyloom"
+    },
+    {
+      "date": "2026-09-15",
+      "text": "Completed the Cognifyz web-development internship and earned Oracle's Agentic AI Foundations Associate."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why should we hire Bapan?",
+      "keys": [
+        "why hire",
+        "why should",
+        "hire him",
+        "hire bapan",
+        "worth hiring",
+        "best candidate",
+        "kyun hire",
+        "kyu hire"
+      ],
+      "a": "Because he ships. Bapan co-built Rescuen and took it live on Google Play, completed two industry internships (Cognifyz, EDU TANTR), and has built {projects} projects — {live} of them live — across web, Android, Fire TV, fintech and AI. His work comes with production habits most freshers skip: tests (184 in Vitrine alone), CSP and rate limits, CI/CD, Docker and Kubernetes. He learns fast and owns things end to end."
+    },
+    {
+      "q": "Is Bapan a fresher? Does he have real experience?",
+      "keys": [
+        "fresher",
+        "freshers",
+        "years of experience",
+        "real experience",
+        "no experience",
+        "junior",
+        "beginner",
+        "anubhav"
+      ],
+      "a": "He graduates in 2027, so on paper he's a fresher — but not a typical one. He has two completed internships, an app live on the Google Play Store built with a teammate, and production-grade projects with real security, testing and deployment. His projects follow the same habits teams expect in production: tests, CI/CD, security headers, rate limits and real deployments."
+    },
+    {
+      "q": "When can he start?",
+      "keys": [
+        "start",
+        "join",
+        "joining",
+        "notice",
+        "notice period",
+        "available",
+        "availability",
+        "kab join",
+        "kab se",
+        "when can"
+      ],
+      "a": "Right away for internships — full-time or part-time, remote or on-site. He graduates in June 2027 and is available for full-time SDE roles from then."
+    },
+    {
+      "q": "Is he open to relocation?",
+      "keys": [
+        "relocate",
+        "relocation",
+        "where is he",
+        "where does he live",
+        "based",
+        "remote",
+        "onsite",
+        "on-site",
+        "bangalore",
+        "bengaluru",
+        "hyderabad",
+        "pune",
+        "kahan se"
+      ],
+      "a": "Yes. He's based in Bankura, West Bengal and is happy to relocate anywhere in India — Bengaluru, Hyderabad, Pune, Gurugram/Noida, Chennai, Mumbai, Kolkata — or to work remotely."
+    },
+    {
+      "q": "What are his salary expectations?",
+      "keys": [
+        "salary",
+        "ctc",
+        "package",
+        "stipend",
+        "compensation",
+        "lpa",
+        "expected salary",
+        "expected ctc",
+        "how much pay"
+      ],
+      "a": "Bapan prefers to discuss compensation directly — he's flexible for the right learning opportunity. You can reach him by email or WhatsApp and he'll respond quickly."
+    },
+    {
+      "q": "What roles is he looking for?",
+      "keys": [
+        "role",
+        "roles",
+        "position",
+        "looking for",
+        "job type",
+        "what kind"
+      ],
+      "a": "SDE / software-engineering internships, full-stack roles (React, Next.js, Angular, Node.js), mobile roles (React Native, Kotlin, Flutter), backend/cloud internships and 2027 new-grad positions."
+    },
+    {
+      "q": "Does he know DSA?",
+      "keys": [
+        "dsa",
+        "leetcode",
+        "algorithms",
+        "data structures",
+        "competitive",
+        "coding round"
+      ],
+      "a": "Yes — data structures and algorithms, OOP, DBMS, operating systems and computer networks are part of his core training, and he practises on LeetCode (BAPAN_GHOSH_07). He also cleared a Data Structures using C assessment from PVG COE Nashik."
+    },
+    {
+      "q": "Can he work in a team?",
+      "keys": [
+        "team",
+        "teamwork",
+        "team player",
+        "collaborat*",
+        "communication",
+        "soft skill",
+        "soft skills"
+      ],
+      "a": "Definitely. Rescuen and Storyloom were both two-person team projects with clear ownership, and his Cognifyz internship certificate specifically commends his dedication, coordination, communication and attention to detail."
+    },
+    {
+      "q": "Does he take freelance work?",
+      "keys": [
+        "freelance",
+        "client",
+        "project for me",
+        "build for me",
+        "website for me",
+        "app for me",
+        "hire for project"
+      ],
+      "a": "For freelance or project work, message Bapan directly by email or WhatsApp with a short brief — he'll get back to you quickly."
+    },
+    {
+      "q": "What is his CGPA?",
+      "keys": [
+        "cgpa",
+        "gpa",
+        "marks",
+        "percentage",
+        "grade",
+        "academics"
+      ],
+      "a": "Bapan shares academic details on request — his résumé and a quick email are the best way to get them."
+    }
+  ],
+  "bot": {
+    "name": "Mini Bapan",
+    "role": "Bapan's personal assistant",
+    "avatar": "/assets/bot/avatar.webp",
+    "greeting": "Namaste! 🙏 I'm Mini Bapan, Bapan Ghosh's personal assistant. Ask me anything about his work, skills or availability — in English, Hindi or Bengali.",
+    "teaser": "Namaste! 🙏 I'm Mini Bapan — ask me anything about Bapan.",
+    "suggestions": [
+      "Why should I hire Bapan?",
+      "Show me his best projects",
+      "What's his tech stack?",
+      "Is he available for internships?",
+      "What's new with Bapan?"
+    ]
+  },
+  "github": {
+    "username": "bapanghosh0812",
+    "exclude": [
+      "bapanghosh0812",
+      "portfolio",
+      "portfolio-2",
+      "next-platform-starter",
+      "Jobs-in-all-Low-to-High-companies"
+    ]
+  }
+}

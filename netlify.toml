@@ -1,0 +1,13 @@
+# Netlify: build the static site from data/portfolio.json and deploy the API functions.
+# Secrets (GEMINI_API_KEY, GROQ_API_KEY, SMTP_USER, SMTP_PASS, …) are set in
+# Netlify → Site configuration → Environment variables — never in this repository.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

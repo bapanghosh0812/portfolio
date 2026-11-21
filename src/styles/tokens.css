@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Bapan Ghosh — design tokens  ·  "Noir & Gold" (default)  ·  "Ivory" (light)
+   ========================================================================== */
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 300 700; font-display: swap; src: url(/assets/fonts/cormorant-garamond-normal-latin-abcaa8.woff2) format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 300 700; font-display: swap; src: url(/assets/fonts/cormorant-garamond-italic-latin-4db21d.woff2) format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 100 900; font-display: swap; src: url(/assets/fonts/inter-normal-latin-6ab57b.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 100 900; font-display: swap; src: url(/assets/fonts/inter-normal-latin-ext-b6db4a.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+:root {
+  --bg: #0A0A0B;
+  --bg-2: #0E0E10;
+  --surface: #131316;
+  --surface-2: #1A1A1E;
+  --line: rgba(212, 175, 55, 0.15);
+  --line-2: rgba(212, 175, 55, 0.34);
+  --ivory: #F3EDDF;
+  --text: #E2DCCD;
+  --muted: #A69F8D;
+  --faint: #6E695D;
+  --gold: #D4AF37;
+  --gold-2: #E6C979;
+  --gold-3: #9A7520;
+  --champagne: #F6E7B6;
+  --on-gold: #16120A;
+  --glass: rgba(19, 19, 22, 0.72);
+  --gold-grad: linear-gradient(100deg, #F6E7B6 0%, #E3C268 24%, #D4AF37 48%, #B38A1E 72%, #EBD38A 100%);
+  --ok: #34D399;
+  --danger: #F87171;
+  --shadow: 0 40px 90px -30px rgba(0, 0, 0, 0.75);
+  --shadow-sm: 0 18px 40px -18px rgba(0, 0, 0, 0.6);
+  --radius-sm: 12px;
+  --radius: 18px;
+  --radius-lg: 26px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-io: cubic-bezier(0.65, 0, 0.35, 1);
+  --font-display: "Cormorant Garamond", "Cormorant", Garamond, Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Devanagari", "Noto Sans Bengali", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace;
+  --container: 1240px;
+  --gutter: clamp(16px, 5vw, 44px);
+  --header-h: 76px;
+  color-scheme: dark;
+}
+
+[data-theme="ivory"] {
+  --bg: #F6F1E6;
+  --bg-2: #F1EADA;
+  --surface: #FFFDF8;
+  --surface-2: #F8F2E4;
+  --line: rgba(122, 92, 22, 0.16);
+  --line-2: rgba(122, 92, 22, 0.34);
+  --ivory: #19150D;
+  --text: #2C261A;
+  --muted: #675C46;
+  --faint: #978C75;
+  --gold: #9A7520;
+  --gold-2: #8A6614;
+  --gold-3: #6E5210;
+  --champagne: #FFF4D6;
+  --glass: rgba(255, 253, 248, 0.78);
+  --gold-grad: linear-gradient(100deg, #6E5210 0%, #A6801F 35%, #C39A2E 55%, #8A6614 80%, #6E5210 100%);
+  --shadow: 0 40px 80px -36px rgba(70, 52, 12, 0.35);
+  --shadow-sm: 0 16px 36px -20px rgba(70, 52, 12, 0.3);
+  color-scheme: light;
+}
